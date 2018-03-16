@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>知识整理</title>
+    <style>
+        body {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {font-family: "iconfont";
+        src: url('iconfont.eot?t=1521105400307'); /* IE9*/
+        src: url('iconfont.eot?t=1521105400307#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+        url('iconfont.ttf?t=1521105400307') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('iconfont.svg?t=1521105400307#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+        font-family:"iconfont" !important;
+        font-size:16px;
+        font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-html:before { content: "\f01c2"; }
+
+        .icon-database:before { content: "\e616"; }
+
+        .icon-0480html5:before { content: "\e62e"; }
+
+        .icon-jsongeshihua:before { content: "\e61a"; }
+
+        .icon-top:before { content: "\e605"; }
+
+        .icon-nodejs:before { content: "\e989"; }
+
+        .icon-java:before { content: "\e746"; }
+
+        .icon-qianduanyingyong:before { content: "\e623"; }
+
+        .icon-webicon215:before { content: "\e68d"; }
+
+        .icon-houtai2:before { content: "\e624"; }
+
+        .icon-github:before { content: "\eee2"; }
+
+        .icon-socialjavascript:before { content: "\e898"; }
+
+        .icon-zhankai:before { content: "\e621"; }
+
+        .icon-visualstudio:before { content: "\e922"; }
+
+        .icon-web-channel:before { content: "\e687"; }
+
+        .icon-leaf:before { content: "\e6c5"; }
+
+        .icon-css:before { content: "\e6d5"; }
+
+        .icon-icon--:before { content: "\e78c"; }
+
+        .icon-zhankai1:before { content: "\e6e0"; }
+
+        .icon-angular:before { content: "\e606"; }
+
+        .icon-vuejs:before { content: "\e640"; }
+
+        .icon-react:before { content: "\e64b"; }
+
+        .icon-css1:before { content: "\e653"; }
+
+        .icon-jquery:before { content: "\e655"; }
+
+        .icon-webpack:before { content: "\e65b"; }
+
+        [v-cloak] {
+            display: none !important;
+        }
+
+        .top {
+            height: 80px;
+            background: -webkit-linear-gradient(left, #00a3af, #5e6fb4);
+            /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right, #00a3af, #5e6fb4);
+            /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, #00a3af, #5e6fb4);
+            /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, #00a3af, #5e6fb4);
+            /* 标准的语法 */
+        }
+
+        .top h1 {
+            color: #fff;
+            line-height: 80px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .top h1 i {
+            font-size: 0.9em;
+        }
+
+        .top .icon-zhankai1{
+            position: absolute;
+            font-size: 0.6em;
+            left: 1em;
+            cursor: pointer;
+        }
+
+        input.search-text {
+            color: #222;
+            position: absolute;
+            z-index: 5;
+            transition: z-index 0.8s, width 0.5s, background 0.3s ease, border 0.3s;
+            height: 35px;
+            width: 0;
+            margin: 0;
+            right: 20px;
+            top: 25px;
+            padding: 5px 0 5px 40px;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 30px;
+            border: 1px solid transparent;
+            /*background: url(search.png) no-repeat left 9px center transparent;*/
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADs0lEQVRYR8WWS2xUVRjH/+eeuffOo3UKouKjlkgx+BjSDUmNRCI+48oQSQguGgQ3KAY3hrUrWemClcHEuDO6ceMj0Ri0iSVNJG0VCKVAH05xWto7M+3cx7n3HL8z2Ebi3OlA78BJZjLJnHz/3/1/3/+bYbjLh91lfbQMMHLZPbXshQNBpFJpy3BztvHdIz2ZQxsYc9bzEGsCXLoWHfVF9OFi1esKo5ul6iAZ82DhUfvL24VoCjBVUpdCia0rxRlTKDk1uIFc1bNNI+rImm/eLkQswF9z6pQf4RCjGxa/oRf864DnC/xd9mByjlBJcINFG/O5rU8+xCZv1YlYgMmSmpUKm7tygIbQRylg2ScQAXj0Vir74JxBUG9sy3Ce3d65IUkAJ5VCPmf/v6QbAC6BzFddLLkCEXUka6dgpfjJndvSR28FopkDTtpGnuo2PKSNiFoyPlshYYPcYZBQ3p5CZyYxAMtEPmM1Lqfb4SwDNe9GK0IpwQwgl7UOPtOb+bxViFgHpubV9wbDKx3p+FK6FR69Jq5VIIlIkgsZi5/Z/VRH/7oBigtqVxDiVz2EcUe7sLhETtQ8ciEA3UfaROXlvnx+3QC6ACWh6RzoO2Vqg0vKF2drOicEwMoE0JUIQPG6OkbZ//ieLEDtiB3GMFQYm67AoEhmLV7a83THA4kA6CLTc+osDVdf3CzoNAgCuFJagt5TnLGJFwqdvYkBFF3VE1RwwTSRbrQTdBIkbaw/Z6rwhET3Jvv9/m3ZTxID0IVWIAxOEJQKcrp+9Fb0dRJEiAvFJdyftz7btT13uFVxfW/NX8OVYhpCVDFEW2+zQXnXCdAvXSGYHsdjV36E6n58n93/4tdtAVgFocGk1f8uaW8i7fmsqH5678TgCTglqFAIY+/bMaurMVbLDjR7qnB48DSvlZ9D8TJUivvGviNN1tfNlRIB0CXVL9+qek+unkN438Nj5msHdrTSisQA5OAPIZMRh0uxmBlH0Ltzh737pbG1IBIDEKNnPkg510/UBSfPQ3Fz0Tjw3sY7BqCF5G8/VZjwOyEom+eHIXoLA9ar+79oBpGYA1rEHx0tWM7MaF1w+iKU7wnjreNNU5EogNaNhn6+agRuD61HYGQQYfcT35h7B16PcyFxgNVE6A/lefqzcA7s2EexOm0BCM4OnTSrC+/UY/n7acgHt0zy/Ue2NHKhLQD1gVyJpbcMOTXh88PHGy6ntgH4fwy/YS3MfSWtzAjvf77vjs7AWtn/7/dtc6BViH8Aa/6UMP9tnAAAAAAASUVORK5CYII=) no-repeat left 9px center transparent;
+            background-size: 24px;
+        }
+
+        input.search-text:focus {
+            z-index: 3;
+            width: 270px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            outline: none;
+            cursor: auto;
+            padding-right: 10px;
+            box-shadow: 0 0 10px #9edeff;
+        }
+
+        input.search-text::-webkit-search-cancel-button {
+            cursor: pointer;
+        }
+
+        /* nav {
+            font-family: "Quicksand", "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+            position: absolute;
+            color: #fff;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(50, 50, 50, 0.75);
+            -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+            overflow: hidden;
+            z-index: 9999;
+            -webkit-box-shadow: 0px 0px 10px #333;
+            box-shadow: 0px 0px 10px #333;
+        }
+
+        nav * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+       nav>ul {
+            display: table;
+            width: 14rem;
+        }
+
+        nav>ul>li {
+            display: table-row;
+            background: #0c66da;
+            cursor: pointer;
+        }
+
+        nav>ul>li:hover {
+            background: #569cf6;
+        }
+
+        nav>ul>li:active {
+            background: #87b9f8;
+        }
+
+        nav>ul>li>div {
+            height: 3.5rem;
+            line-height: 3.5rem;
+            display: table-cell;
+        }
+
+        nav>ul>li>div:nth-child(1) {
+            width: 3.5rem;
+            text-align: center;
+        }
+
+        nav>ul>li>div:nth-child(2) {
+            width: 10.5rem;
+            text-align: left;
+            padding-left: 0.7rem;
+        } */
+
+        ul.tree {
+            border: 1px solid #efefef;
+            border-bottom: none;
+        }
+
+        ul.tree ul[data-open="false"] {
+            display: none;
+        }
+
+        ul.tree,
+        ul.tree ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.tree>li:last-of-type,
+        ul.tree ul>li:last-of-type {
+            border-bottom: none;
+        }
+
+        ul.tree li,
+        ul.tree ul li {
+            line-height: 2.5em;
+        }
+
+        ul.tree li:before,
+        ul.tree ul li:before {
+            font-family: "iconfont" !important;
+            font-size: 1em;
+            float: left;
+            width: 2em;
+            height: 2.5em;
+            cursor: pointer;
+            text-align: center;
+            content: "\f01c2";
+            border-right: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+        }
+        ul.tree li:nth-child(1):before{
+            color: #f7622c;
+            content: "\f01c2" !important;
+        }
+        ul.tree li:nth-child(2):before{
+            color: #1758a8;
+            content: "\e6d5" !important;
+        }
+        ul.tree li:nth-child(3):before{
+            color: #f1da4e;
+            content: "\e898" !important;
+        }
+        ul.tree li:nth-child(4):before{
+            color: #1db5f4;
+            content: "\e61a" !important;
+        }
+        ul.tree li:nth-child(5):before{
+            color: #41b883;
+            content: "\e640" !important;
+        }
+        ul.tree li:nth-child(6):before{
+            color: #61dafb;
+            content: "\e64b" !important;
+        }
+        ul.tree li:nth-child(7):before{
+            color: #f7622c;
+            content: "\e606" !important;
+        }
+        ul.tree li:nth-child(8):before{
+            color: #82cd22;
+            content: "\e989" !important;
+        }
+        ul.tree li:nth-child(9):before{
+            color: #698ecf;
+            content: "\e65b" !important;
+        }
+        ul.tree li:nth-child(10):before{
+            color: #50b718;
+            content: "\e6c5" !important;
+        }
+        ul.tree li:nth-child(11):before{
+            color: #24292e;
+            content: "\eee2" !important;
+        }
+        ul.tree li:nth-child(12):before{
+            color: #cf3321;
+            content: "\e746" !important;
+        }
+        ul.tree li .tree-head,
+        ul.tree ul li .tree-head {
+            display: block;
+            margin-left: 2em;
+            margin-right: 2em;
+            height: 2.5em;
+            padding-left: 1em;
+            border-bottom: 1px solid #efefef;
+            text-decoration: none;
+            color: #000000;
+            text-align: center;
+        }
+
+        ul.tree li a:hover,
+        ul.tree ul li a:hover {
+            color: #1180ee;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #cf3321;
+        }
+
+        ul.tree li .tree-head:after,
+        ul.tree ul li .tree-head:after {
+            font-family: "iconfont" !important;
+            float: right;
+            width: 2em;
+            height: 2.5em;
+            cursor: pointer;
+            text-align: center;
+            content: "\e6e0";
+            margin-right: -2em;
+            border-left: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+        }
+        
+        .accordion-content {
+            height: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+            /* -webkit-transition: 1s ease-in-out;
+            -moz-transition: 1s ease-in-out;
+            -o-transition: 1s ease-in-out;
+            transition: 1s ease-in-out; */
+        }
+
+        .accordion-content:target {
+            height: 98%;
+            width: 98%;
+            margin: 1%;
+        }
+
+        .panel-title {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-left: 1em;
+            color: #515d6e;
+        }
+
+        .panel-list {
+            font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+            width: 98%;
+            height: 100%;
+            margin: 1%;
+            border-radius: 0.6em;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+        }
+
+        .panel-list:hover {
+            background-color: rgb(236, 236, 236);
+            box-shadow: 0 0 10px #65bd60;
+        }
+
+        .question {
+            font-size: 1em;
+            color: #82cd22;
+            margin-left: 0.2em;
+            margin-bottom: 0.2em;
+            line-height: 1.5em;
+            font-weight: bold;
+        }
+
+        .answers {
+            font-size: 0.95em;
+            color: #222;
+            line-height: 1.8em;
+            margin: 0 1.5em 0.2em 1.5em;
+        }
+        .answers a{
+            color: #1180ee;
+            text-decoration: none;
+        }
+        .child-text{
+            font-size: 0.89em;
+            color: rgb(48, 48, 48);
+            margin: 0 1.5em 0.2em 1.5em;
+            line-height: 1.6em;
+        }
+        .table-fill {
+            background: white;
+            border-radius: 3px;
+            border-collapse: collapse;
+            height: 100%;
+            margin: auto;
+            width: 95%;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: float 5s infinite;
+        }
+
+        th {
+            color: #fff;
+            background: #48c0a3;
+            border-right: 1px solid #ccc;
+            font-size: 0.6em;
+            font-weight: 100;
+            /* padding: 24px; */
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            vertical-align: middle;
+        }
+
+        th:first-child {
+            border-top-left-radius: 3px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 3px;
+            border-right: none;
+        }
+
+        tr {
+            border-top: 1px solid #ccc;
+            color: #000;
+            font-size: 1em;
+            font-weight: normal;
+            text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+        }
+
+        tr:hover td {
+            background: #bacac6;
+            color: #FFFFFF;
+            border-top: 1px solid #a4e2c6;
+        }
+
+        tr:first-child {
+            border-top: none;
+        }
+
+        tr:last-child {
+            border-bottom: none;
+        }
+
+        tr:nth-child(odd) td {
+            background: #EBEBEB;
+        }
+
+        tr:nth-child(odd):hover td {
+            background: #88ada6;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 3px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 3px;
+        }
+
+        td {
+            background: #FFFFFF;
+            text-align: left;
+            vertical-align: middle;
+            font-size: 0.8em;
+            line-height: 30px;
+            text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+            border-right: 1px solid #ccc;
+        }
+
+        td:last-child {
+            border-right: 0px;
+        }
+
+        th.text-left {
+            text-align: left;
+        }
+
+        th.text-center {
+            text-align: center;
+        }
+
+        th.text-right {
+            text-align: right;
+        }
+
+        td.text-left {
+            text-align: left;
+        }
+
+        td.text-center {
+            text-align: center;
+        }
+
+        td.text-right {
+            text-align: right;
+        }
+
+        /* code pre */
+        .wrapper {
+            width: 98%;
+            margin-left: 1%;
+        }
+
+        /* CSS Simple Pre Code */
+        pre {
+            background: #282c34;
+            white-space: pre;
+            word-wrap: break-word;
+            overflow: auto;
+        }
+
+        pre.code {
+            margin: 10px 0;
+            border-radius: 4px;
+            /* border: 1px solid #292929; */
+            -webkit-box-shadow: 0px 0px 10px #333;
+            box-shadow: 0px 0px 10px #333;
+            position: relative;
+        }
+
+        pre.code label {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 0.8em;
+            color: #ddd;
+            position: absolute;
+            text-align: center;
+            width: 50px;
+            top: 5px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+        }
+
+        pre.code code {
+            font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+            display: block;
+            margin: 0;
+            padding: 0 16px 14px;
+            border-left: 1px solid #555;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 19px;
+            color: #ddd;
+        }
+
+        pre::after {
+            content: "";
+            padding: 0;
+            width: auto;
+            height: auto;
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            font-size: 12px;
+            color: rgb(19, 167, 0);
+            line-height: 20px;
+            overflow: hidden;
+            -webkit-backface-visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        pre:hover::after {
+            opacity: 0;
+            visibility: visible;
+        }
+
+        pre.code-css code {
+            color: #e2c09a;
+        }
+
+        pre.code-html code {
+            color: #aed581;
+        }
+
+        pre.code-javascript code {
+            color: #bf7fff;
+        }
+
+        pre.code-jquery code {
+            color: #4dd0e1;
+        }
+        .elem{
+            border: 2px solid #48c0a3;
+            position: relative;
+        }
+        .elem .label, .endlabel {
+            position: absolute;
+            background-color: #6AC5AC;
+            color: #fff;
+            line-height: 1em;
+        }
+        .elem .label{
+            top: 0;
+            left: 0;
+            padding: 0 3px 3px 0;
+        }
+        .elem .endlabel{
+            right: 0;
+            bottom: 0;
+            padding: 3px 0 0 3px;
+        }
+        .elem p{
+            padding: 0 1em;
+        }
+        .back-top{
+            position: fixed;
+            bottom: 1.8em;
+            right: 1.8em;
+            width: 2.5em;
+            height: 2.5em;
+            background-color: #000;
+            border-radius: 50%;
+            text-align: center;
+            background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+            box-shadow: 0 0 5px #ff9a44;
+            cursor: pointer;
+            opacity: 0;
+            -webkit-transition: all .5s ease-in;  
+            -moz-transition: all .5s ease-in;  
+            transition: all .5s ease-in;
+        }
+        .back-top i{
+            position: relative;
+            color: #fff;
+            font-size: 1.3em;
+            top: 8px;
+        }
+        /* .back-top:active{
+            outline: none;
+            box-shadow: 0 0 5px #30c7ec;
+            background-image: radial-gradient(circle 1em at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+        } */
+    </style>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="webs">
+        <div class="top">
+            <h1>
+                <i class="iconfont icon-zhankai1" @click="showNav"></i>
+                <i class="iconfont icon-web-channel"></i> <span>Web</span>
+            </h1>
+            <!-- <input type="search" name="q" class="search-text" placeholder="搜索标题" autocomplete="off"> -->
+        </div>
+        <!-- <nav v-if="webnav" v-cloak>
+            <li id="link-one">
+                <div>1</div>
+                <div>One</div>
+            </li>
+            <li id="link-two">
+                <div>2</div>
+                <div>Two</div>
+            </li>
+            <li id="link-three">
+                <div>3</div>
+                <div>Three</div>
+            </li>
+            <li id="link-four">
+                <div>4</div>
+                <div>Four</div>
+            </li>
+            <li id="link-five">
+                <div>5</div>
+                <div>Five</div>
+            </li>
+        </nav> -->
+        <ul class="tree">
+            <li v-for="(d,index) in datas">
+                <a class="tree-head" @click="changeTitle(d.title)" v-text="d.title"></a>
+                <div class="accordion-content" :id="d.title">
+                    <div v-for="(c,id) in d.content">
+                        <div class="panel-title" v-text="c.title" :id="d.title + id"></div>
+                        <div class="panel-list" v-for="q in c.questionList">
+                            <div class="question" v-text="q.question"></div>
+                            <div class="answers" v-for="ans in q.answers">
+                                {{ans.text}}
+                                <div class="child-text" v-for="cans in ans.childtext">
+                                    {{cans.text}}
+                                    <div class="wrapper" v-if="cans.jscode||cans.htmlcode" v-cloak>
+<pre class='code code-jquery' v-if="cans.jscode"><code>
+{{cans.jscode}}</code></pre>
+<pre class='code code-html' v-if="cans.htmlcode"><code>
+{{cans.htmlcode}}
+</code></pre>
+                                    </div>
+                                </div>
+                                <a v-if="ans.link" :href="ans.link" target="view_window">{{ans.linktext}}</a>
+                                <img v-if="ans.img" :src="ans.img">
+                                <div class="wrapper" v-if="ans.jscode||ans.htmlcode||ans.csscode||ans.jquerycode" v-cloak>
+<pre class='code code-html' v-if="ans.htmlcode"><code>
+{{ans.htmlcode}}
+</code></pre>
+
+<pre class='code code-css' v-if="ans.csscode"><code>
+{{ans.csscode}}
+</code></pre>
+
+<pre class='code code-javascript' v-if="ans.jscode"><code>
+{{ans.jscode}}</code></pre>
+
+<pre class='code code-jquery' v-if="ans.jquerycode"><label>Jquery</label><code>$(document).ready(function{
+    jQuery.cssRule(".post", "display", "block");
+});</code></pre>
+                                </div>
+                                <table class="table-fill" v-for="tl in ans.tableList">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" v-text="tl.property"></th>
+                                            <th class="text-center" v-text="tl.description"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-hover">
+                                        <tr v-for="v in tl.values">
+                                            <td class="text-center" v-text="v.key"></td>
+                                            <td class="text-left" v-text="v.values"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="elem" v-if="ans.csslabel" :style="ans.csslabel">
+                                    <span class="label" :style="ans.labelcolor">{{ans.label}}</span>
+                                    <img v-if="ans.imgs" :src="ans.imgs" :style="ans.imgsstyle">
+                                    <p>
+                                            {{ans.csstext}} 
+                                    </p>
+                                    <div class="elem" v-if="ans.childcsscode" :style="ans.childcsscode">
+                                            <span class="label" :style="ans.childlabelcolor">{{ans.childlabel}}</span>
+                                            <p>
+                                                    {{ans.childcsstext}} 
+                                            </p>
+                                            <span class="endlabel" :style="ans.childlabelcolor">{{ans.childendlabel}}</span>
+                                    </div>
+                                    <span class="endlabel" :style="ans.labelcolor">{{ans.endlabel}}</span>
+                                </div>
+                                <section class="elem" v-if="ans.sectioncss" :style="ans.sectioncss">
+                                    <span class="label" :style="ans.sectionlabelcolor">{{ans.sectionlabel}}</span>
+                                    <p>
+                                            {{ans.sectioncsstext}} 
+                                    </p>
+                                    <span class="endlabel" :style="ans.sectionlabelcolor">{{ans.endlabel}}</span>
+                                </section>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a class="back-top" @click="toTop">
+            <i class="iconfont icon-top"></i>
+        </a>
+    </div>
+    <script>
+        var webs = new Vue({
+            el: '#webs',
+            data: {
+                datas: '',
+                webnav: false,
+                timer: '', //定义一个定时器
+                isTop: true //定义一个布尔值，用于判断是否到达顶部
+            },
+            mounted() {
+                let self = this
+                window.onscroll = function() {
+                    self.onscroll()
+                }
+                this.datas = [{
+                        title: 'HTML',
+                        content: [
+                            {
+                            title: "HTML基础知识(超文本标记语言)",
+                            questionList: [{
+                                question: 'viewport',
+                                answers: [{htmlcode: '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />'},{text: '● width：设置viewport宽度，为一个正整数，或字符串‘device-width’',childtext: [{text: ' device-width  设备宽度'},{text: ' height   设置viewport高度，一般设置了宽度，会自动解析出高度，可以不用设置'}]},{
+                                    text: '● initial-scale：默认缩放比例（初始缩放比例），为一个数字，可以带小数'
+                                },{
+                                    text: '● minimum-scale：允许用户最小缩放比例，为一个数字，可以带小数'
+                                },{
+                                    text: '● maximum-scale：允许用户最大缩放比例，为一个数字，可以带小数'
+                                },{
+                                    text: '● user-scalable：是否允许手动缩放'
+                                },{
+                                    text: '● 延伸提问，怎样处理 移动端 1px 被 渲染成 2px 问题？',
+                                },{
+                                    text: '1、 局部处理',
+                                    childtext: [{text: 'meta标签中的 viewport属性 ，initial-scale 设置为 1，rem 按照设计稿标准走，外加利用transfrome 的scale(0.5) 缩小一倍即可'}]
+                                },{
+                                    text: '2 、全局处理',
+                                    childtext: [{text: 'meta标签中的 viewport属性 ，initial-scale 设置为 0.5 ，rem 按照设计稿标准走即可'}]
+                                }]
+                            },{
+                                question: '跨域的几种方式',
+                                answers: [{text: '首先了解下浏览器的同源策略，同源策略/SOP（Same origin policy）是一种约定，由Netscape公司1995年引入浏览器，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。所谓同源是指"协议+域名+端口"三者相同，即便两个不同的域名指向同一个ip地址，也非同源。'},{
+                                    text: '那么怎样解决跨域问题的呢？'
+                                },{text: '1、 通过jsonp跨域',childtext: [{text: '①原生实现：',jscode: 'var script = document.createElement(\'script\');\nscript.type = \'text/javascript\';\n// 传参并指定回调执行函数为onBack\nscript.src = \'http://www.....:8080/login?user=admin&callback=onBack\';\ndocument.head.appendChild(script);\n// 回调执行函数\nfunction onBack(res) {\n  alert(JSON.stringify(res));\n}'}]},{text: '2、 document.domain + iframe跨域',childtext: [{text: '此方案仅限主域相同，子域不同的跨域应用场景。'},{text: '①父窗口：(http://www.domain.com/a.html) ',htmlcode: '<iframe id="iframe" src="http://child.domain.com/b.html"></iframe>\n<script>\n  document.domain = \'domain.com\';\n  var user = \'admin\';\n<\/script>'},{text: '②子窗口：',htmlcode: '(http://child.domain.com/b.html)\ndocument.domain = \'domain.com\'; \n// 获取父窗口中变量\nalert(\'get js data from parent ---> \' +window.parent.user);'}]},{text: '3、 nginx代理跨域'},{text: '4、 nodejs中间件代理跨域'},{text: '5、 后端在头部信息里面设置安全域名'},{linktext: '更多跨域的具体内容请看',link: 'https://segmentfault.com/a/1190000011145364'}]
+                            },{
+                                question: '渲染优化',
+                                answers: [{text: '1、禁止使用iframe（阻塞父文档onload事件）',childtext: [{text: 'ｏ iframe会阻塞主页面的Onload事件'},{text: 'ｏ 搜索引擎的检索程序无法解读这种页面，不利于SEO'},{text: 'ｏ iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载'},{text: '使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以绕开以上两个问题'}]},{text: '2、禁止使用gif图片实现loading效果（降低CPU消耗，提升渲染性能）'},{text: '3、使用CSS3代码代替JS动画（尽可能避免重绘重排以及回流）'},{text: '4、对于一些小图标，可以使用base64位编码，以减少网络请求',childtext: [{text:'但不建议大图使用，比较耗费CPU'},{text: '小图标优势在于：'},{text: ' ①减少HTTP请求'},{text: ' ②避免文件跨域'},{text: ' ③修改及时生效'}]},{text: '5、页面头部的<style></style> 会阻塞页面（因为 Renderer进程中 JS线程和渲染线程是互斥的）'},{text: '7、页面中空的 href 和 src 会阻塞页面其他资源的加载(阻塞下载进程)'},{text: '8、网页Gzip，CDN托管，data缓存 ，图片服务器'},{text: '9、前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数'},{text: '10、用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能'},{text: '11、当需要设置的样式很多时设置className而不是直接操作style'},{text: '12、少用全局变量、缓存DOM节点查找的结果，减少IO读取操作'},{text: '13、避免使用CSS Expression（css表达式)又称Dynamic properties(动态属性)'},{text: '14、图片预加载，将样式表放在顶部，将脚本放在底部加上时间戳'},{text: '15、 避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。对普通的网站有一个统一的思路，就是尽量向前端优化、减少数据库操作、减少磁盘IO。向前端优化指的是，在不影响功能和体验的情况下，能在浏览器执行的不要在服务端执行，能在缓存服务器上直接返回的不要到应用服务器，程序能直接取得的结果不要到外部取得，本机内能取得的数据不要到远程取，内存能取到的不要到磁盘取，缓存中有的不要去数据库查询。减少数据库操作指减少更新次数、 缓存结果减少查询次数、将数据库执行的操作尽可能的让你的程序完成（例如join查询），减少磁盘IO指尽量不使用文件系统作为缓存、减少读写文件次数等。程序优化永远要优化慢的部分，换语言是无法“优化”的。'}]
+                            },{
+                                question: '事件的各个阶段',
+                                answers: [{text: '1：捕获阶段'},{text: '2：目标阶段'},{text: '3：冒泡阶段document ---> target目标 ----> document'},{text: '由此，addEventListener的第三个参数设置为true和false的区别已经非常清晰了：true表示该元素在事件的“捕获阶段”（由外往内传递时）响应事件；false表示该元素在事件的“冒泡阶段”（由内向外传递时）响应事件。'}]
+                            },{
+                                question: '可能用到的meta标签',
+                                answers: [{htmlcode: '<!-- 设置缩放 -->\n<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no, minimal-ui" />\n<!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） -->\n<meta name="apple-mobile-web-app-capable" content="yes" />\n<!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->\n<meta name="apple-mobile-web-app-status-bar-style" content="black" />\n<!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 -->\n<meta name="format-detection"content="telephone=no,email=no" />'},{
+                                    text: '其他meta标签',
+                                    htmlcode: '<!-- 启用360浏览器的极速模式(webkit) -->\n<meta name="renderer" content="webkit">\n<!-- 避免IE使用兼容模式 -->\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->\n<meta name="HandheldFriendly" content="true">\n<!-- 微软的老式浏览器 -->\n<meta name="MobileOptimized" content="320">\n......'
+                                }]
+                            }]
+
+                        }, {
+                            title: "HTML面试题",
+                            questionList: [{
+                                question: '1、Doctype作用？标准模式与兼容模式各有什么区别?',
+                                answers: [{text:'（1）、<!DOCTYPE>声明位于位于HTML文档中的第一行，处于 <html> 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。'},{
+                                    text:'（2）、标准模式的排版 和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。'
+                                }]
+                            }, {
+                                question: '2、HTML5 为什么只需要写 <!DOCTYPE HTML>？',
+                                answers: [{text:'HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）；而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。'}]
+                            }
+                            , {
+                                question: '3、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？',
+                                answers: [{text: 'CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。', childtext: [
+                                    {text:'1、行内元素有：a b span img input select strong（强调的语气）'},
+                                    {text: '2、块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p'},
+                                    {text: '3、常见的空元素：<br> <hr> <img> <input> <link> <meta>鲜为人知的是：<area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>'}]}]
+                            }, {
+                                question: '4、页面导入样式时，使用link和@import有什么区别？',
+                                answers: [{text: '（1）link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;'},{text: '（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;'},{text: '（3）import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;'}]
+                            }, {
+                                question: '5、介绍一下你对浏览器内核的理解？',
+                                answers: [{text: '主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。'},{text: 'ｏ 渲染引擎：',childtext: [{text: '负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。'}]},{text: 'ｏ JS引擎则：',childtext: [{text: '解析和执行javascript来实现网页的动态效果。'}]},{
+                                    text: '最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。'
+                                }]
+                            },{
+                                question: '6、常见的浏览器内核有哪些？',
+                                answers: [{text:'ｏ Trident内核：',childtext: [{text: 'IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]'}]},{text:'ｏ Gecko内核：',childtext: [{text: 'Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等'}]},{text:'ｏ Presto内核：',childtext: [{text: 'Opera7及以上。  [Opera内核原为：Presto，现为：Blink;]'}]},{text:'ｏ Webkit内核：',childtext: [{text: 'Safari,Chrome等。  [ Chrome的：Blink（WebKit的分支）]'}]}]
+                            },{
+                                question: '7、html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？',
+                                answers: [{text: 'ｏ HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。',childtext: [{text: '● 绘画 canvas;'},{text: '● 用于媒介回放的 video 和 audio 元素;'},{text: '● 本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;'},{text: '● sessionStorage 的数据在浏览器关闭后自动删除;'},{text: '● 语意化更好的内容元素，比如 article、footer、header、nav、section;'},{text: '● 表单控件，calendar、date、time、email、url、search;'},{text: '● 新的技术webworker, websocket, Geolocation;'}]},{text: 'ｏ 移除的元素：', childtext: [{text: '● 纯表现的元素：basefont，big，center，font, s，strike，tt，u;'},{text: '● 对可用性产生负面影响的元素：frame，frameset，noframes；'}]},{text: 'ｏ 支持HTML5新标签：', childtext: [{text: '● IE8/IE7/IE6支持通过document.createElement方法产生的标签，可以利用这一特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式。'},{text: '● 当然也可以直接使用成熟的框架、比如html5shim;',htmlcode: ' <!--[if lt IE 9]>\n   <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>\n <![endif]-->'}]},{
+                                    text: 'ｏ 如何区分HTML5：',
+                                    childtext: [{text: 'DOCTYPE声明\新增的结构元素\功能元素'}]
+                                }]
+                            },{
+                                question: '8、简述一下你对HTML语义化的理解？',
+                                answers: [{text: 'ｏ 用正确的标签做正确的事情。'},{text: 'ｏ html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析'},{text: 'ｏ 即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的'},{text: 'ｏ 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO'},{text: 'ｏ 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。'}]
+                            },{
+                                question: '9、HTML5的离线储存怎么使用，工作原理能不能解释一下？',
+                                answers: [{text: '在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。'},{text: ' 原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。'},{text: '如何使用：',childtext: [{text: '1、页面头部像下面一样加入一个manifest的属性；'},{text: '2、在cache.manifest文件的编写离线存储的资源；',htmlcode: 'CACHE MANIFEST\n#v0.11\nCACHE:\njs/app.js\ncss/style.css\nNETWORK:\nresourse/logo.png\nFALLBACK:\n/ /offline.html'},{text: '3、在离线状态时，操作window.applicationCache进行需求实现。'}]},{linktext: '详细的使用请参考：有趣的HTML5：离线存储',link: 'https://segmentfault.com/a/1190000000732617'}]
+                            },{
+                                question: '10、浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？',
+                                answers: [{text: 'ｏ 在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。'},{text: 'ｏ 离线的情况下，浏览器就直接使用离线存储的资源。'},{linktext: '详细的使用请参考：有趣的HTML5：离线存储',link: 'https://segmentfault.com/a/1190000000732617'}]
+                            },{
+                                question: '11、请描述一下 cookies，sessionStorage 和 localStorage 的区别？',
+                                answers: [{text: 'ｏ cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。'},{text: 'ｏ cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。'},{text: 'ｏ sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。'},{text: 'ｏ 存储大小：',childtext: [{text: '● cookie数据大小不能超过4k。'},{text:'● sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。'}]},{text: 'ｏ 有期时间：',childtext: [{text: '● localStorage：存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；'},{text:'● sessionStorage：数据在当前浏览器窗口关闭后自动删除。'},{text:'● cookie：设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭'}]}]
+                            },{
+                                question: '12、iframe有那些缺点？',
+                                answers: [{text: 'ｏ iframe会阻塞主页面的Onload事件'},{text: 'ｏ 搜索引擎的检索程序无法解读这种页面，不利于SEO'},{text: 'ｏ iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。'},{text: '使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以绕开以上两个问题。'}]
+                            },{
+                                question: '13、Label的作用是什么？是怎么用的？',
+                                answers: [{text: 'label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。',htmlcode: '<label for="Name">Number:</label>\n<input type=“text“name="Name" id="Name"/>\n<label>Date:<input type="text" name="B"/></label>'}]
+                            },{
+                                question: '14、HTML5的form如何关闭自动完成功能？',
+                                answers: [{text: '给不想要提示的 form 或某个 input 设置为 autocomplete=off。'}]
+                            },{
+                                question: '15、如何实现浏览器内多个标签页之间的通信? ',
+                                answers: [{text: 'WebSocket、SharedWorker,也可以调用localstorge、cookies等本地存储方式'},{text: 'localstorge另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，我们通过监听事件，控制它的值来进行页面信息通信；注意quirks：Safari 在无痕模式下设置localstorge值时会抛出 QuotaExceededError 的异常；'}]
+                            },{
+                                question: '16、webSocket如何兼容低浏览器？',
+                                answers: [{text: 'Adobe Flash Socket 、ActiveX HTMLFile (IE) 、基于 multipart 编码发送 XHR 、基于长轮询的 XHR'}]
+                            },{
+                                question: '17、页面可见性（Page Visibility API） 可以有哪些用途？',
+                                answers: [{text: 'ｏ 通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间等'},{text: 'ｏ 在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放'}]
+                            },{
+                                question: '18、如何在页面上实现一个圆形的可点击区域？',
+                                answers: [{text: '1、map+area或者svg'},{text: '2、border-radius'},{text: '3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等'}]
+                            },{
+                                question: '19、实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。',
+                                answers: [{htmlcode: '<div style="height:1px;overflow:hidden;background:red"></div>'}]
+                            },{
+                                question: '20、网页验证码是干嘛的，是为了解决什么安全问题',
+                                answers: [{text: 'ｏ 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水。有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试'}]
+                            },{
+                                question: '21、title与h1的区别、b与strong的区别、i与em的区别？',
+                                answers: [{text: 'ｏ title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响'}, {text: 'ｏ strong是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<strong>会重读，而<B>是展示强调内容'}, {text: 'ｏ i内容展示为斜体，em表示强调的文本'}, {text: 'ｏ Physical Style Elements -- 自然样式标签'}, {text: ' b, i, u, s, pre'},{text: 'ｏ Semantic Style Elements -- 语义样式标签'},{text: ' strong, em, ins, del, code'},{text: '应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签'}]
+                            },{
+                                question: '22、列举web性能优化？',
+                                answers: [{text: '⒈减少http请求次数。合并文件、利用css sprite把零散的图片整合到一张图上。'},{text: '⒉减少DNS查找。'},{text: '⒊减少重定向。'},{text: '⒋响应时间，使用AJAX进行缓存，减少http请求。'},{text: '⒌延迟载入组件。'},{text: '⒍预载入组件。'},{text: '⒎减少节点的数量。'},{text: '⒏切分组件到多个域。'},{text: '⒐最小化iframe。'},{text: '⒑杜绝http404报错。'}]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'CSS',
+                        content: [{
+                            title: 'CSS布局',
+                            questionList: [{
+                                question: '"dispaly"属性',
+                                answers: [{link: 'http://zh.learnlayout.com',linktext:'参考链接'},{text: 'display 是CSS中最重要的用于控制布局的属性。每个元素都有一个默认的 display 值，这与元素的类型有关。对于大多数元素它们的默认值通常是 block 或 inline 。一个 block 元素通常被叫做块级元素。一个 inline 元素通常被叫做行内元素。'},{text: '● block',csslabel: 'h',csstext: 'div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、 footer 、 section 等等。',label: '<div>',endlabel: '</div>'},{
+                                    text: '● inline',
+                                    childtext: [{text: 'span 是一个标准的行内元素。一个行内元素可以在段落中 <span> 像这样 </span> 包裹一些文字而不会打乱段落的布局。 a 元素是最常用的行内元素，它可以被用作链接。'}]
+                                },{
+                                    text: '● none',
+                                    childtext: [{text: '另一个常用的display值是 none 。一些特殊元素的默认 display 值是它，例如 script 。 display:none 通常被 JavaScript 用来在不删除元素的情况下隐藏或显示元素。'},{text: '它和 visibility 属性不一样。把 display 设置成 none 元素不会占据它本来应该显示的空间，但是设置成 visibility: hidden; 还会占据空间。'}]
+                                },{
+                                    text: '其他 display 值',
+                                    childtext: [{text: '还有很多的更有意思的 display 值，例如 list-item 和 table 。inline-block 和 flex 。'}]
+                                },{
+                                    linktext: '详细display列表参考',
+                                    link: 'https://developer.mozilla.org/zh-CN/docs/Web/CSS/display'
+                                }]
+                            },{
+                                question: '',
+                                answers: [{
+                                    text:'● margin: auto;',
+                                    csscode: '#main {\n   width: 600px;\n   margin: 0 auto;\n}',
+                                    csslabel: 'width: 600px;margin: 0 auto;',
+                                    label: '<div id="main">',
+                                    endlabel: '</div>',
+                                    csstext: '设置块级元素的 width 可以防止它从左到右撑满整个容器。然后你就可以设置左右外边距为 auto 来使其水平居中。元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。让我们再来改进下这个方案...'
+                                },{
+                                    text: '● max-width',
+                                    csscode: '#main {\n   max-width: 600px;\n   margin: 0 auto;\n}',
+                                    csslabel: 'max-width: 600px;margin: 0 auto;',
+                                    label: '<div id="main">',
+                                    endlabel: '</div>',
+                                    csstext: '在这种情况下使用 max-width 替代 width 可以使浏览器更好地处理小窗口的情况。这点在移动设备上显得尤为重要，调整下浏览器窗口大小检查下吧！顺便提下， 所有的主流浏览器包括IE7+在内都支持 max-width ，所以放心大胆的用吧。',
+                                    
+                                },{
+                                    linktext: "所有浏览器css属性兼容",
+                                    link: 'https://caniuse.com'
+                                }]
+                            },{
+                                question: '盒模型',
+                                answers: [{
+                                    text: '在我们讨论宽度的时候，我们应该讲下与它相关的另外一个重点知识：盒模型。当你设置了元素的宽度，实际展现的元素却超出你的设置：这是因为元素的边框和内边距会撑开元素。看下面的例子，两个相同宽度的元素显示的实际宽度却不一样。'
+                                },{
+                                    csscode: '.simple {\n   width: 500px;\n   margin: 20px auto;\n}\n\n.fancy {\n   width: 500px;\n   margin: 20px auto;\n   padding: 50px;\n   border-width: 10px;\n}'
+                                },{
+                                    csslabel: 'width: 500px;margin: 0 auto;',
+                                    label: '<div class="simple">',
+                                    endlabel: '</div>',
+                                    csstext: '我小一些...'
+                                },{
+                                    csslabel: 'width: 500px;margin: 20px auto;padding: 50px;border-width: 10px;',
+                                    label: '<div class="fancy">',
+                                    endlabel: '</div>',
+                                    csstext: '我更大'
+                                },{
+                                    childtext: [{text: '以前有一个代代相传的解决方案是通过数学计算。CSS开发者需要用比他们实际想要的宽度小一点的宽度，需要减去内边距和边框的宽度。值得庆幸地是你不需要再这么做了...'}]
+                                },{
+                                    text: '● box-sizing',
+                                    childtext: [{text: '人们慢慢的意识到传统的盒子模型不直接，所以他们新增了一个叫做 box-sizing 的CSS属性。当你设置一个元素为 box-sizing: border-box; 时，此元素的内边距和边框不再会增加它的宽度。这里有一个与前一页相同的例子，唯一的区别是两个元素都设置了 box-sizing: border-box; ：'}]
+                                },{
+                                    csscode: '.simple {\n   width: 500px;\n   margin: 20px auto;\n   -webkit-box-sizing: border-box;\n   -moz-box-sizing: border-box;\n   box-sizing: border-box;\n}\n\n.fancy {\n   width: 500px;\n   margin: 20px auto;\n   padding: 50px;\n   border: 10px solid #82cd22;\n   -webkit-box-sizing: border-box;\n   -moz-box-sizing: border-box;\n   box-sizing: border-box;\n}'
+                                },{
+                                    csslabel: 'width: 500px;margin: 0 auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;',
+                                    label: '<div class="simple">',
+                                    endlabel: '</div>',
+                                    csstext: '现在一样大小了'
+                                },{
+                                    csslabel: 'width: 500px;margin: 20px auto;padding: 50px;border-width: 10px;border: 10px solid #82cd22;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;',
+                                    label: '<div class="fancy">',
+                                    endlabel: '</div>',
+                                    csstext: 'padding撑高'
+                                },{
+                                    text:'既然没有比这更好的方法，一些CSS开发者想要页面上所有的元素都有如此表现。所以开发者们把以下CSS代码放在他们页面上：',
+                                    csscode: '* {\n   -webkit-box-sizing: border-box;\n   -moz-box-sizing: border-box;\n   box-sizing: border-box;\n}'
+                                },{
+                                    text: '这样可以确保所有的元素都会用这种更直观的方式排版。不过 box-sizing 是个很新的属性，目前你还应该像我上面例子中那样使用 -webkit- 和 -moz- 前缀。这可以启用特定浏览器实验中的特性。同时记住它是支持IE8+的。'
+                                },{
+                                    text: '● position',
+                                    childtext: [{text: '为了制作更多复杂的布局，我们需要讨论下 position 属性。它有一大堆的值，名字还都特抽象，别提有多难记了。让我们先一个个的过一遍，不过你最好还是把这页放到书签里。'}]
+                                },{
+                                    text: '○ static',
+                                    csscode: '.static {\n   position: static;\n}',
+                                    csslabel: 'display:bloak;',
+                                    label: '<div class="static">',
+                                    endlabel: '</div>',
+                                    csstext: 'static 是默认值。任意 position: static; 的元素不会被特殊的定位。一个 static 元素表示它不会被“positioned”，一个 position 属性被设置为其他值的元素表示它会被“positioned”。'
+                                },{
+                                    text: '○ relative',
+                                    csscode: '.relative1 {\n   position: relative;\n}\n\n.relative2 {\n   position: relative;\n   top: -20px;\n   left: 20px;\n   background-color: white;\n   width: 500px;\n}',
+                                    csslabel: 'position: relative;',
+                                    label: '<div class="relative1">',
+                                    endlabel: '</div>',
+                                    csstext: 'relative 表现的和 static 一样，除非你添加了一些额外的属性。'
+                                },{
+                                    csslabel: 'position: relative;top: -20px;left: 20px;background-color: white;width: 500px;border-color: #b64078;',
+                                    label: '<div class="relative2">',
+                                    labelcolor: 'background-color: #b64078;',
+                                    endlabel: '</div>',
+                                    csstext: '在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙。'
+                                },{
+                                    text: '○ fixed',
+                                    childtext: [{text: '一个固定定位（position属性的值为fixed）元素会相对于视窗来定位，这意味着即便页面滚动，它还是会停留在相同的位置。和 relative 一样， top 、 right 、 bottom 和 left 属性都可用'},{
+                                        text: '我相信你已经注意到页面右下角的固定定位元素。你现在可以仔细看看它，这里有它所使用的CSS：'
+                                    }],
+                                    csscode: '.fixed {\n   position: fixed;\n   bottom: 0;\n   right: 0;\n   width: 200px;\n   background-color: white;\n}',
+                                },{
+                                    text: '一个固定定位元素不会保留它原本在页面应有的空隙（脱离文档流）。令人惊讶地是移动浏览器对 fixed 的支持很差。',
+                                    link: 'http://bradfrost.com/blog/mobile/fixed-position/',
+                                    linktext:'这里有相应的解决方案.'
+                                },{
+                                    text: '○ absolute',
+                                    childtext: [{text: 'absolute 是最棘手的position值。 absolute 与 fixed 的表现类似，但是它不是相对于视窗而是相对于最近的“positioned”祖先元素。如果绝对定位（position属性的值为absolute）的元素没有“positioned”祖先元素，那么它是相对于文档的 body 元素，并且它会随着页面滚动而移动。记住一个“positioned”元素是指 position 值不是 static 的元素。'
+                                    },{text: '这里有一个简单的例子：'}],
+                                    csscode: '.relative {\n   position: relative;\n   width: 400px;\n   height: 400px;\n}\n.absolute {\n   position: absolute;\n   top: 120px;\n   right: 0;\n   width: 300px;\n   height: 200px;\n}',
+                                    csslabel: 'position: relative;width: 100%; min-height: 300px;',
+                                    label: '<div class="relative">',
+                                    endlabel: '</div>',
+                                    csstext: '这个元素是相对定位的。如果它是 position: static; ，那么它的绝对定位子元素会跳过它直接相对于body元素定位。',
+                                    childcsscode: 'position: absolute;top: 100px;right: 0;width: 80%;min-height: 50px;border-color: #b64078;',
+                                    childlabel: '<div class="absolute">',
+                                    childendlabel: '</div>',
+                                    childlabelcolor: 'background-color: #b64078;',
+                                    childcsstext: '这个元素是相对定位的。如果它是 position: static; ，那么它的绝对定位子元素会跳过它直接相对于body元素定位。'
+                                },{
+                                   text: '○ position例子(下面是一个真正的页面布局。)',
+                                   csscode: '.container {\n   position: relative;\n}\nnav {\n   position: absolute;\n   left: 0px;\n   width: 200px;\n}\nsection {\n   margin-left: 200px;\n}\nfooter {\n   position: fixed;\n   bottom: 0;\n   left: 0;\n   height: 70px;\n   background-color: white;\n   width: 100%;\n}\nbody {\n   margin-bottom: 120px;\n}',
+                                },{
+                                    text: '○ float',
+                                    csscode: 'img {\n   float: right;\n   margin: 0 0 1em 1em;\n}'
+                                },{
+                                    text: '○ clear',
+                                    htmlcode: '<div class="box">...</div>\n<section>...</section>',
+                                    csscode: '.box {\n   float: left;\n   width: 200px;\n   height: 100px;\n   margin: 1em;\n}',
+                                    csslabel: 'float: left;width: 200px;height: 100px;margin: 1em;background: #00000082;',
+                                    label: '<div class="box">',
+                                    endlabel: '</div>',
+                                    csstext: '漂浮中',
+                                    sectioncss: 'background-color: #deb88754;border-color: #FDC72F;',
+                                    sectionlabelcolor: 'background-color: #FDC72F;',
+                                    sectionlabel: '<section>',
+                                    endlabel: '</section>',
+                                    sectioncsstext: '在这个例子中， section 元素实际上是在 div 之后的（译注：DOM结构上）。然而 div 元素是浮动到左边的，于是 section 中的文字就围绕了 div ，并且 section 元素包围了整个元素。如果我们想让 section 显示在浮动元素之后呢？'
+                                },{
+                                    csscode: '.box {\n   float: left;\n   width: 200px;\n   height: 100px;\n   margin: 1em;\n}\n.after-box {\n   clear: left;\n}',
+                                    csslabel: 'float: left;width: 200px;height: 100px;margin: 1em;background: #00000082;',
+                                    label: '<div class="box">',
+                                    endlabel: '</div>',
+                                    csstext: '漂浮中',
+                                    sectioncss: 'background-color: #deb88754;border-color: #FDC72F;clear: left;',
+                                    sectionlabelcolor: 'background-color: #FDC72F;',
+                                    sectionlabel: '<section class="after-box">',
+                                    endlabel: '</section>',
+                                    sectioncsstext: '使用 clear 我们就可以将这个段落移动到浮动元素 div 下面。你需要用 left 值才能清除元素的向左浮动。你还可以用 right 或 both 来清除向右浮动或同时清除向左向右浮动。'
+                                },{
+                                    text: '○ 清除浮动（clearfix hack）',
+                                    childtext: [{text: '在使用浮动的时候经常会遇到一个古怪的事情：'}],
+                                    csscode: 'img {\n   float: right;\n}',
+                                    csslabel: 'position:relative;',
+                                    label: '<div class="box">',
+                                    endlabel: '</div>',
+                                    csstext: '不......这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面！',
+                                    imgs: 'http://zh.learnlayout.com/images/ilta.png',
+                                    imgsstyle: 'float: right;'
+                                },{
+                                    childtext: [{text: '见证奇迹的时刻到了！有一种比较丑陋的方法可以解决这个问题，它叫做清除浮动（clearfix hack）'},{text: '让我们加入一些新的CSS样式：'}],
+                                    csscode: '.clearfix {\n   overflow: auto;\n}',
+                                    csslabel: 'overflow: auto;',
+                                    label: '<div class="clearfix">',
+                                    endlabel: '</div>',
+                                    csstext: '不再溢出',
+                                    imgs: 'http://zh.learnlayout.com/images/ilta.png',
+                                    imgsstyle: 'float: right;'
+                                },{
+                                    childtext: [{text: '这个可以在现代浏览器上工作。如果你想要支持IE6，你就需要再加入如下样式：'},{text: '让我们加入一些新的CSS样式：'}],
+                                    csscode: '.clearfix {\n   overflow: auto;\n   zoom: 1;\n}',
+                                },{
+                                    text: '有些独特的浏览器需要“额外的关照”。',
+                                    link: 'https://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use',
+                                    linktext: '清除浮动这潭 水很深很深,',
+                                },{text: '但是这个简单的解决方案已经可以在今天所有的主要浏览器上工作。'},{
+                                    text:'○ 浮动布局例子',
+                                    childtext: [{text: '完全使用 float 来实现页面的布局是很常见的。这里有一个我之前用 position 实现的布局例子，这次我使用 float 实现了它。'}],
+                                    csscode: '.nav {\n   float: left;\n   width: 200px;\n}\nsection {\n   margin-left: 200px;\n}',
+                                    link: 'http://zh.learnlayout.com/float-layout.html',
+                                    linktext: '参考案例'
+                                },{
+                                    text:'○ 百分比宽度',
+                                    childtext: [{text: '百分比是一种相对于包含块的计量单位。它对图片很有用：如下我们实现了图片宽度始终是容器宽度的50%。把页面缩小看下效果！'}],
+                                    csscode: 'article img {\n   float: right;\n   width: 50%;\n}',
+                                    link: 'http://zh.learnlayout.com/percent.html',
+                                    linktext: '参考案例'
+                                },{
+                                    text:'百分比宽度布局',
+                                    childtext: [{text: '你可以用百分比做布局，但是这需要更多的工作。在下面的例子中，当窗口宽度很窄时 nav 的内容会以一种不太友好的方式被包裹起来。总而言之，选一种最合适你的内容的方式。'}],
+                                    csscode: 'nav {\n   float: left;\n   width: 25%;\n}\nsection {\n   margin-left: 25%;\n}',
+                                    link: 'http://zh.learnlayout.com/percent.html',
+                                    linktext: '参考案例'
+                                },{
+                                    text: '○ 媒体查询',childtext: [{text: '“响应式设计（Responsive Design” 是一种让网站针对不同的浏览器和设备“呈现”不同显示效果的策略，这样可以让网站在任何情况下显示的很棒！'},{
+                                        text: '媒体查询是做此事所需的最强大的工具。让我们使用百分比宽度来布局，然后在浏览器变窄到无法容纳侧边栏中的菜单时，把布局显示成一列：'
+                                    }],
+                                    csscode: '@media screen and (min-width:600px) {\n nav {\n   float: left;\n   width: 25%;\n }\n section {\n   margin-left: 25%;\n }\n}\n@media screen and (max-width:599px) {\n  nav li {\n   display: inline;\n }\n}',
+                                    link: 'http://zh.learnlayout.com/media-queries.html',
+                                    linktext: '参考案例'
+                                },{
+                                    text: '★额外加分点',
+                                    childtext: [{text:'使用 meta viewport 之后可以让你的布局在移动浏览器上显示的更好。'}],
+                                    htmlcode: '<meta name="viewport" content="width=320, initial-scale=0.5">',
+                                    link: 'https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/',
+                                    linktext: 'meta viewport'
+                                },{
+                                    text: '○ inline-block',childtext: [{text: '“你可以创建很多网格来铺满浏览器。在过去很长的一段时间内使用 float 是一种选择，但是使用 inline-block 会更简单。让我们看下使用这两种方法的例子：'},{
+                                        text: '困难的方式（使用浮动）'
+                                    }],
+                                    csscode: '.box {\n   float: left;\n   width: 200px;\n   height: 100px;\n   margin: 1em;\n}\n.after-box {\n   clear: left;\n}',
+                                },{
+                                    childtext: [{
+                                        text: '容易的方式（使用 inline-block）'
+                                    },{text: '你可以用 display 属性的值 inline-block 来实现相同效果。'}],
+                                    csscode: '.box2 {\n   display: inline-block;width: 200px;height: 100px;margin: 1em;\n}',
+                                    link: 'http://zh.learnlayout.com/inline-block.html',
+                                    linktext: 'inline-block参考案例'
+                                },{
+                                    text: '你得做些额外工作来让IE6和IE7支持 inline-block 。有些时候人们谈到 inline-block 会触发叫做 hasLayout 的东西，你只需要知道那是用来支持旧浏览器的。如果你对此很感兴趣，可以在前面那个链接中找到更详细的信息。否则我们就继续下去吧。'
+                                },{
+                                    text: '○ inline-block 布局',
+                                    childtext: [{text: '你可以使用 inline-block 来布局。有一些事情需要你牢记：'},{text: '● vertical-align 属性会影响到 inline-block 元素，你可能会把它的值设置为 top 。'},{text: '● 你需要设置每一列的宽度'},{text: '● 如果HTML源代码中元素之间有空格，那么列与列之间会产生空隙'}],
+                                    csscode:'nav {\n   dispaly: inline-block;\n   vertical-align: top;\n   width: 25%;\n}\n.column {\n   display: inline-block;\n   vertical-align: top;\n   width: 75%;\n}',
+                                    link: 'http://zh.learnlayout.com/inline-block-layout.html',
+                                    linktext: 'inline-block 布局参考案例'
+                                },{
+                                    text: '○ column',
+                                    childtext: [{text: '这里有一系列新的CSS属性，可以帮助你很轻松的实现文字的多列布局。'},{text: 'CSS columns是很新的标准，所以你需要使用前缀，并且它不被IE9及以下和Opera Mini支持。还有许多和 column 相关的属性，点击这里了解更多。否则让我们讨论下一个主题。'}],
+                                    csscode:'.three-column {\n   padding: 1em;\n   -moz-column-count: 3;\n   -moz-column-gap: 1em;\n   -webkit-column-count: 3;\n   -webkit-column-gap: 1em;\n   column-count: 3;\n   column-gap: 1em;\n}',
+                                    sectioncss: 'padding: 1em;-moz-column-count: 3;-moz-column-gap: 1em;-webkit-column-count: 3;-webkit-column-gap: 1em;column-count: 3;column-gap: 1em;',
+                                    sectionlabel: '<div class="three-column">',
+                                    endlabel: '</div>',
+                                    sectioncsstext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.',
+                                    link: 'https://quirksmode.org/css/columns/',
+                                    linktext: '了解更多和 column 相关的属性'
+                                },{
+                                    text: '○ flexbox',
+                                    link: 'http://zh.learnlayout.com/flexbox.html',
+                                    linktext: '参考',
+                                    childtext: [{text: '新的 flexbox 布局模式被用来重新定义CSS中的布局方式。很遗憾的是最近规范变动过多，导致各个浏览器对它的实现也有所不同。不过我仍旧想要分享一些例子，来让你知道即将发生的改变。这些例子目前只能在支持 flexbox 的 Chrome 浏览器中运行，基于最新的标准。'},{text: '网上有不少过时的 flexbox 资料。 如果你想要了解更多有关 flexbox 的内容，从这里学习如何辨别一份资料是否过时。我已经写了一份关于最新标准的详细文章。使用flexbox你还可以做的更多；这里只是一些让你了解概念的例子：'}],
+                                },{
+                                    text: '使用Flexbox 的简单布局',
+                                    csscode:'.container {\n   display: -webkit-flex;\n   display: flex;\n}\nnav {\n   width: 200px;\n}\n.flex-column {\n   -webkit-flex: 1;\n   flex: 1;\n}'
+                                },{
+                                    text:'使用 Flexbox 的牛逼布局',
+                                    csscode:'.container {\n   display: -webkit-flex;\n   display: flex;\n}\n.initial {\n   -webkit-flex: initial;\n   flex: initial;\n   width: 200px;\n   min-width: 100px;\n}\n.none {\n   -webkit-flex: none;\n   flex: none;\n   width: 200px;\n}\n.flex1 {\n   -webkit-flex: 1;\n   flex: 1;\n}\n.flex2 {\n   -webkit-flex: 2;\n   flex: 2;\n}'
+                                },{
+                                    text: '使用 Flexbox 的居中布局',
+                                    csscode:'.vertical-container {\n   height: 300px;\n   display: -webkit-flex;\n   display: flex;\n   -webkit-align-items: center;\n   align-items: center;\n   -webkit-justify-content: center;\n   justify-content: center;\n}'
+                                }]
+                            },{
+                                
+                                question: '伪类、伪元素',
+                                answers: [{text:':Pseudo-classes     伪类:DOM在不同状态、不同位置下的特殊效果；'},{
+                                    text:'::Pseudo-elements   伪元素：DOM按匹配规则伪造出的元素；'
+                                },{
+                                    text:'注意点：'
+                                },{
+                                    text:'ｏ 伪类添加的内容元素或伪类效果在dom元素中是看不到的，需要借助开发者工具才能看到。'
+                                },{
+                                    text:'ｏ 使用屏幕阅读器等设备无法访问和读取伪元素生成的内容。因此不应该使用伪元素来添加正文内容等重要信息到页面展示，应确保主题内容完整性。'
+                                },{
+                                    text:'ｏ 伪类添加的元素也可以使用css样式进行控制，具体查看下面浏览器兼容。'
+                                },{
+                                    text:'ｏ content方式可以添加图片、Unicode、字符串；其中图片不能调整大小，要选择合适的图片。'
+                                },{
+                                    text:'ｏ 伪元素是在dom内容生成之后添加的，它将堆积在dom的父元素顶上。'
+                                },{
+                                    text:'ｏ 伪元素由双冒号和伪元素名称组成，为了兼容使用单冒号的伪类也有效。'
+                                },{
+                                    text:'ｏ 伪类添加的内容和元素不能使用任何JavaScript的事件处理程序。'
+                                },{
+                                    text:'ｏ 具体浏览器兼容性可以使用Can I Use(http://caniuse.com/#search=CSS3) 或 MDN CSS Browser Support(https://developer.mozilla.org/zh-CN/docs/Web/CSS)'
+                                },{
+                                    text:'ｏ js获取伪类的值：',
+                                    jscode: 'win.getComputedStyle(doc.querySelector(\'.element\'), \':before\').getPropertyValue(\'color\')'
+                                },{
+                                    tableList: [{
+                                        property: '常用伪类元素、伪类列表',
+                                        description: '作用',
+                                        values: [{
+                                            key: '::after',
+                                            values: '在元素的内容之后'
+                                        }, {
+                                            key: '::before',
+                                            values: '在元素的内容之前'
+                                        }, {
+                                            key: '::first-line',
+                                            values: '元素的第一行'
+                                        }, {
+                                            key: '::first-letter',
+                                            values: '元素的第一个字母'
+                                        }, {
+                                            key: '::placeholder',
+                                            values: '占位符，用于input输入框之类的提醒'
+                                        }
+                                        , {
+                                            key: '::selection',
+                                            values: '被选取的元素，用于改变网页被选中部分的效果'
+                                        }
+                                        , {
+                                            key: ':active',
+                                            values: '当元素被点击的时'
+                                        }
+                                        , {
+                                            key: ':blank',
+                                            values: '空白的元素'
+                                        }
+                                        , {
+                                            key: ':checked',
+                                            values: '被选中的元素'
+                                        }
+                                        , {
+                                            key: ':default',
+                                            values: '默认被选中或默认会被提交的元素'
+                                        }
+                                        , {
+                                            key: ':disabled',
+                                            values: '处于被禁止操作状态的元素'
+                                        }
+                                        , {
+                                            key: ':empty',
+                                            values: '没有任何内容的元素'
+                                        }
+                                        , {
+                                            key: ':enabled',
+                                            values: '处于可操作状态的元素'
+                                        }
+                                        , {
+                                            key: ':first',
+                                            values: '用于打印文档的第一页'
+                                        }
+                                        , {
+                                            key: ':first-child',
+                                            values: '父级元素下的第一个子元素'
+                                        }
+                                        , {
+                                            key: ':first-of-type',
+                                            values: '父级元素下的第一个同类子元素'
+                                        }
+                                        , {
+                                            key: ':focus',
+                                            values: '当元素成为焦点'
+                                        }
+                                        , {
+                                            key: ':fullscreen',
+                                            values: '当元素被HTML5 API调用RequestFullscreen方式全屏时'
+                                        }
+                                        , {
+                                            key: ':hover',
+                                            values: '当鼠标移动到链接元素上面时'
+                                        }
+                                        , {
+                                            key: ':invalid',
+                                            values: '当元素属性值不是指定的type属性时'
+                                        }
+                                        , {
+                                            key: ':indeterminate',
+                                            values: '当元素属性值处于不确定状态的'
+                                        }
+                                        , {
+                                            key: ':last-child',
+                                            values: '元素的最后一个子元素'
+                                        }
+                                        , {
+                                            key: ':last-of-type',
+                                            values: '元素的最后一个同类子元素'
+                                        }
+                                        , {
+                                            key: ':link',
+                                            values: '未被访问的链接元素'
+                                        }
+                                        , {
+                                            key: ':required',
+                                            values: '设置了 "required" 属性的元素'
+                                        }
+                                        , {
+                                            key: ':scope',
+                                            values: '作用域的伪类，默认为HTML（案例 :scope #mammma {...}）'
+                                        }
+                                        , {
+                                            key: ':target',
+                                            values: '当前活动的元素（匹配页面URI中对应的目标元素）'
+                                        }
+                                        , {
+                                            key: ':visited',
+                                            values: '已被访问过的元素'
+                                        }
+                                        , {
+                                            key: ':not()',
+                                            values: '否定选择器（不匹配条件则生效）'
+                                        }
+                                        , {
+                                            key: ':dir()',
+                                            values: '匹配特定文字书写方向的元素'
+                                        }
+                                        , {
+                                            key: ':lang()',
+                                            values: '匹配有正确lang 属性值的元素，如 lang(zh-Hans)'
+                                        }
+                                        , {
+                                            key: ':nth-child()',
+                                            values: '元素的一个或多个特定的子元素'
+                                        }
+                                        , {
+                                            key: ':nth-last-child()',
+                                            values: '元素的一个或多个特定的子元素，从该元素的最后一个子元素开始算'
+                                        }
+                                        , {
+                                            key: ':nth-of-type()',
+                                            values: '选择指定的元素'
+                                        }
+                                        , {
+                                            key: ':nth-last-of-type()',
+                                            values: '选择指定的元素，从元素的最后一个开始计算'
+                                        }
+                                        , {
+                                            key: ':only-child',
+                                            values: '元素是它的父元素的唯一子元素'
+                                        }
+                                        , {
+                                            key: ':only-of-type',
+                                            values: '元素是它的父级元素的唯一一个相同类型的子元素'
+                                        }
+                                        , {
+                                            key: ':optional',
+                                            values: '未指定required属性的表单元素'
+                                        }
+                                        , {
+                                            key: ':out-of-range',
+                                            values: '超出规定值范围的元素'
+                                        }
+                                        , {
+                                            key: ':read-only',
+                                            values: '元素设置了 \'readonly\' 属性生效'
+                                        }
+                                        , {
+                                            key: ':read-write',
+                                            values: '元素没有 \'readonly\' 属性生效'
+                                        }
+                                        , {
+                                            key: ':root',
+                                            values: '文档的根元素'
+                                        }
+                                        , {
+                                            key: ':left',
+                                            values: '选择打印文档的左侧页'
+                                        }
+                                        , {
+                                            key: ':right',
+                                            values: '选择打印文档的右侧页'
+                                        }
+                                    ]
+                                }],
+                                }]
+                            }]
+                        },{
+                            title: "CSS面试题",
+                            questionList: [{
+                            }, {
+                                question: '1.CSS选择符有哪些？哪些属性可以继承？优先级算法如何计算？内联和important哪个优先级高？',
+                                answers: [{text: 'css有3种选择器：派生选择器 ，如ul li {} id选择器 ，如#id {} 类选择器。'},{
+                                    text: '可以继承的有：font-size font-family color'
+                                },{text: '优先级算法用CSS specificity，它是衡量一个衡量css优先级的一个标准'},{text: '!important的优先级最高'}]
+                            }, {
+                                question: '2.请列举几种可以清除浮动的方法（至少两种）',
+                                answers: [{text: '● 采用伪类:after进行后续控制的高度位零的伪类层清除'},{text: '● 采用css overflow:auto的方式撑高'},{text: '● 采用css overflow:hidden的方式产生怪异适应'},{text: '● 采用display:table 将对象变成table形式'},{text: '● 采用div标签，以及css的clear属性'},{text: '● 采用br标签，以及其自身html的clear属性'}]
+                            }, {
+                                question: '3.你做的页面在哪些浏览器中测试过？这些浏览器内核分别是什么？经常遇到浏览器兼容性有哪些？怎么会出现？解决方法是什么？',
+                                answers: [{text: 'IE内核浏览器：360 遨游 搜狗 世界之窗 腾讯TT'},{text: '非IE内核浏览器：chrome Firefox Opera Safari',childtext: [{text: '⒈ 就是ie6双倍边距的问题，，在使用float的情况下，不管是左还是右都会出现，最简单的解决方法就是用display:inline。'},{text: '⒉ 文字本身的大小不兼容。同样是font-size:14px的字体，在不同浏览器下占用的空间是不一样的，ie下世纪占高16px，下留白3px，ff下实际占高17px，上留白1px，下留白3px，opera下就更不一样了。解决方案：给文字设定 line-height 。确保所有文字都有默认的 line-height 值。这点很重要，在高度上我们不能容忍1px 的差异。'},{text: '⒊ ff下容器高度限定，即容器定义了height之后，容器边框的外形就确定了，不会被内容撑大，而ie下是会被内容撑大，高度限定失效。所以不要轻易给容器定义height。'},{text: '⒋ 还讨论内容撑破容器问题，横向上的。如果float 容器未定义宽度，ff下内容会尽可能撑开容器宽度，ie下则会优先考虑内容折行。故，内容可能撑破的浮动容器需要定义width。'},{text: '⒌ 浮动的清除，ff下不清除浮动是不行的。'},{text: '⒍ mirrormargin bug，当外层元素内有float元素时，外层元素如定义margin-top:14px，将自动生成margin-bottom:14px。padding也会出现类似问题，都是ie6下的特产，该类bug 出现的情况较为复杂，远不只这一种出现条件，还没系统整理。解决方案：外层元素设定border 或 设定float。'},{text: '⒎ 吞吃现象，限于篇幅，我就不展开了。还是ie6，上下两个div，上面的div设置背景，却发现下面没有设置背景的div 也有了背景，这就是吞吃现象。对应上面的背景吞吃现象，还有滚动下边框缺失的现象。解决方案：使用zoom:1。这个zoom好象是专门为解决ie6 bug而生的。'},{text: '⒏ 注释也能产生bug~~~“多出来的一只猪。”这是前人总结这个bug使用的文案，ie6的这个bug 下，大家会在页面看到猪字出现两遍，重复的内容量因注释的多少而变。解决方案：用“<!–[if !IE]> picRotate start <![endif]–>”方法写注释。'},{text: '⒐ <li/>里加 float <div/>，这是一个典型的，棘手的兼容问题，希望引起大家正视 ，给li 不同的属性会有不同的解释效果，ff下的解释稍可理解，ie6下的解释会让你摸不着头脑，由于问题的复杂性，将另起一文专门讨论该问题。在《ul使用心得》一文里有相关成果，却没给出问题解决的过程。'},{text: '⒑ img下的留白。解决方案：给img设定 display:block。'},{text: '⒒ 失去line-height。<div style=”line-height:20px”><img />文字</div>，很遗憾，在ie6下单行文字 line-height 效果消失了。。。，原因是<img />这个inline-block元素和inline元素写在一起了。解决方案：让img 和文字都 float起来。'}]}]
+                            }, {
+                                question: '4.请缩写以下代码',
+                                answers: [{csscode: '.box{\n  background-position: 10px 20px;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-color: red;\n  background-image: url("box.png");\n}'},{
+                                    text: '缩写顺序------->color url attachment repeat position',
+                                    csscode: '.box{background: red url("box.png") fixed no-repeat position;}'
+                                }]
+                            }, {
+                                question: '5.display: none和visibility: hidden的区别是什么？',
+                                answers: [{text: '两者都是把网页上的某个元素隐藏起来，但是display:none是彻底删除这个对象，visibility:hidden只是把这个元素隐藏了，然而元素所占的空间没有改变'}]
+                            },{
+                                question: '6.行内元素有哪些？块级元素有哪些？CSS盒子模型？空(viod)元素？',
+                                answers: [{text: '行内元素：a、b、br、i、span、input、select'},{text: '块级元素：div、p、h1、h2、h3、h4、form、ul'},{text: 'CSS盒子模型：内容、border、margin、padding',childtext: [{text: '在网页中，一个元素占有空间的大小由几部分组成，其中包括元素的内容(content)，元素的内边距(padding)、元素的边框(border)、元素的外边距(margin)四部分。这四部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域。'}]},{text: '空元素：即没有内容的HTML元素 br、meta、hr、link、input、img'}]
+                            },{
+                                question: '7.CSS引入的方式有哪些？link和@important的区别是？',
+                                answers: [{text: '内联、内嵌、外链、导入'},{text: 'link和@important的区别：同时加载 前者无兼容性 后者css2.1以下浏览器不支持'},{text: 'link支持使用JavaScript改变样式，后者不可以'}]
+                            },{
+                                question: '8.CSS实现垂直水平居中',
+                                answers: [{text: '● 脱离文档流元素居中：'},{text: '方法一（已知宽度和高度情况下）：margin:auto',csscode: 'div{\n  width: 300px;\n  height: 300px;\n  position: relative;\n  border: 1px solid #465468;\n}\nimg{\n  position: absolute;\n  margin: auto;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}',htmlcode: '<div>\n  <img src="xxx.png">\n</div>'},{text: '方法二（已知宽度和高度情况下）：负margin',csscode: '.container{\n  width: 500px;\n  height: 400px;\n  border: 2px solid #379;\n   position: relative;\n}\n.inner{\n  width: 480px;\n  height: 380px;\n  background-color: #746;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-top: -190px; /*height的一半*/\n  margin-left: -240px; /*width的一半*/\n}',htmlcode: '<div class="container">\n  <div class="inner"></div>\n</div>'},{text: '● 未脱离文档流元素居中：'},{text: '方法一：display: table-cell',csscode: 'div{\n  width: 260px;\n  height: 230px;\n  border: 3px solid #555;\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\nimg{\n  vertical-align: middle;\n}',htmlcode: '<div>\n  <img src="xxx.png">\n</div>'},{text: '方法二：transform',csscode:'.item{\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);  /* 使用css3的transform来实现 */\n}'},{text: '方法三：flex',csscode: '.container{\n  width: 300px;\n  height: 200px;\n  border: 3px solid #546461;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n.inner{\n  border: 3px solid #458761;\n  padding: 20px;\n}',htmlcode: '<div class="container">\n  <div class="inner">我在容器中水平垂直居中</div>\n</div>'}]
+                            },{
+                                question: '9.什么是CSS Hack？',
+                                answers: [{text: '一般来说就是针对不同浏览器写不同的CSS兼容，就是CSS Hack'},{text: 'IE浏览器Hack一般又分为三种，条件Hack、属性级Hack、选择符Hack',linktext: '（详细参考CSS文档）',link: 'http://www.phpstudy.net/css3/'},{text: '条件Hack',htmlcode: '<!--[if IE]>\n  <style>\n    .test{\n      //css style\n    }\n  </style>\n<![endif]-->'},{text: '属性Hack',csscode: '.test{\n  color:#090\9; /* For IE8\n  *color:#f00;  /* For IE7 and earlier */\n  _color:#ff0;  /* For IE6 and earlier */\n}'},{text: '选择符Hack',csscode: '* html .test{color:#090;}       /* For IE6 and earlier */\n* + html .test{color:#ff0;}     /* For IE7 */'}]
+                            },{
+                                question: '10.如何在页面上实现一个圆形的可点击区域？',
+                                answers: [{text: '1、map+area或者svg'},{text: '2、border-radius'},{text: '3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等'}]
+                            },{
+                                question: '11.实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果',
+                                answers: [{csscode: '<div style="height:1px;overflow:hidden;background:red"></div>'}]
+                            },{
+                                question: '11.字体font-family',
+                                answers: [{
+                                    childtext: [{text:'@ 宋体 SimSun'},{text:'@ 黑体 SimHei '},{text: '@ 微信雅黑 Microsoft Yahei'},{text: '......'}],
+                                    csscode:'body {\n  font-family: Microsoft Yahei,SimSun,Helvetica;\n}'
+                                }]
+                            },{
+                                question: '12.消除transition闪屏',
+                                answers: [{csscode: '.css {\n  -webkit-transform-style: preserve-3d;\n  -webkit-backface-visibility: hidden;\n  -webkit-perspective: 1000;\n}'},{text: '过渡动画（在没有启动硬件加速的情况下）会出现抖动的现象，以上的 解决方案只是改变 视角 来启动硬件加速的一种方式'},{text: '启动硬件加速的 另外一种方式： ',csscode:'.css {\n  -webkit-transform: translate3d(0,0,0);\n  -moz-transform: translate3d(0,0,0);\n  -ms-transform: translate3d(0,0,0);\n  transform: translate3d(0,0,0);\n}'},{text: '启动硬件加速最常用的方式：translate3d、translateZ、transform opacity属性/过渡动画（需要动画执行的过程中才会创建合成层，动画没有开始或结束后元素还会回到之前的状态）。will-chang属性（这个比较偏僻），一般配合opacity与translate使用（而且经测试，除了上述可以引发硬件加速的属性外，其它属性并不会变成复合层），弊端： 硬件加速会导致 CPU性能占用量过大，电池电量消耗加大 ；因此 尽量避免泛滥使用硬件加速。'}]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'JavaScript',
+                        content: [{
+                            title: "JavaScript基础知识",
+                            questionList: [{
+                                question: 'JavaScript:',
+                                answers: [{text: '是一种动态类型、弱类型、基于原型的客户端脚本语言，用来给HTML页面增加动态功能。'}]
+                            }, {
+                                question: '动态：',
+                                answers: [{text: '在运行时确定数据类型。变量使用之前不需要类型声明，通常变量的类型是被赋值的那个值的类型。'}]
+                            }, {
+                                question: '弱类：',
+                                answers: [{text: '计算时可以不同类型之间对使用者透明的隐式转换，即使类型不正确，也可以通过隐式转换来得到正确的类型。'}]
+                            }, {
+                                question: '原型：',
+                                answers: [{text: '新对象继承对象（作为模板），将自身的属性共享给新对象，模板对象称为原型。这样新对象实例化后不但可以享有自己创建时和运行时的属性，而且可以享有原型对象的属性。（新对象指函数，模板对象是实例对象，实例对象是不能继承原型的，函数才可以。）'}]
+                            }, {
+                                question: 'JavaScript的三个组成部分',
+                                answers: [
+                                    {text:'1.ECMAScript(核心)'},
+                                    {text:'作为核心，它规定了语言的组成部分：语法、类型、语句、关键字、保留字、操作符、对象（*不完全兼容的实现）'},
+                                    {text:'2.DOM(文档对象类型)'},
+                                    {text:'DOM把整个页面映射为一个多层节点结果，开发人员可借助DOM提供API，轻松的删除、添加、替换和修改任何节点。（DOM也有级别，分为DOM1、DOM2、DOM3，拓展不少规范和新接口。）'},
+                                    {text:'3.BOM(浏览器对象模型)'},
+                                    {text:'支持可以访问和操作浏览器窗口的浏览器对象模型，开发人员可以控制浏览器显示的页面意外的部分。（BOM未形成规范）'}
+                                ]
+                            }]
+                        },{
+                            title: "JavaScript面试题",
+                            questionList: [{
+                                question: '1.JS的数据类型 (6种)',
+                                answers: [{text: '（5种）原始类型：number、string、Boolean、null、undefined'},{text: '（1种）对象类型：object对象（函数Function Array Date）'}]
+                            },{
+                                question: '2.隐式转换',
+                                answers: [{text: '== 叫做相等运算符  ===叫做严格运算符'},{text: 'NaN和任何类型都不相等，包括它自己'},{text: 'new Object≠new Object'},{text: '严格运算符运算规则：'},{text: '⒈如果两个值类型不同，直接返回false'},{text: '  ⒉同一类型的原始类型的值（数值、字符串、布尔值）比较时，值相同就返回true，值不同就返回false。'},{text: '⒊两个复合类型（对象、数组、函数）的数据比较时，不是比较它们的值是否相等，而是比较它们是否指向同一个对象。'},{text:'⒋undefined 和 null 与自身严格相等。null === null  //true  undefined === undefined  //true 相等运算符在比较不同类型的数据时，它会将数据进行类型转换'},{text:'类型转换：'},{text: '字符串转整数--parseInt()：',jscode:' var num = "222";\n num = parseInt(num); //(当转换不是数字的时候会返回NaN: not a number,所以需要另一个方法isNaN()) \n if(isNaN(parseInt(num))){\n   console.log("转换是NaN"); \n }else{ \n   num = parseInt(num); \n }'},{
+                                    text:'转换带小数的字符串--parseFloat()：',
+                                    jscode: ' var n = "11.1";\n n = parseFloat(n);'
+                                },{
+                                    text:'能转整数和小数但必须是数字的字符串--Number：',
+                                    jscode: ' var n = "22.222";\n n = Number(n);'
+                                },{
+                                    text:'任意转换当为null时：',
+                                    jscode: ' var aa = "null";\n val bb = 66;\n String(aa) + bb.toString(); //null66'
+                                },{
+                                    text:'一个字符串当做js代码来执行调用eval',
+                                    jscode: ' var msg = "var n = 6; var n1 = n * 11; n + n1;";\n eval(msg);'
+                                }]
+                            },{
+                                question: '3.包装对象',
+                                answers: [{text: '在JavaScript中只要引用了字符串（数字、布尔值也是一样的）的属性，JS就会将字符串通过调用new String(s)的方式转换成对象，这个对象继承了字符串的方法，并被用来处理属性的引用。一旦属性引用结束，这个新创建的对象就会销毁（真实实现并不一定是这样，但整个过程看起来是这样）。这个过程就叫包装对象。'}]
+                            },{
+                                question: '4.类型检测',
+                                answers: [{text: 'typeof判断基础类型以及function检测，遇到null失效（返回的是object）'},
+                                {text: 'object.prototype.toString适合内置对象和基元类型，遇到null和undefined失效'},{text: 'instanceof适合自定义对象，还适用检测原生对象，在不同的iframe和window失效'}]
+                            },{
+                                question: '5.表达式',
+                                answers: [{text: '原始表达式：常量、直接量(3.14,"字符串")  关键字(null this true)  变量(j,k,i)'},
+                                {text: '数组、对象的初始化表达式：', jscode: ' [1, 2] ==> new Array(1,2);\n [1,,,4] ==> [1,undefined,undefined,4];\n {x:1,y=2} ==> var o = new Object();\n o.x = 1;\n o.y = 2;'},{text: '函数表达式：', jscode: ' var fe = function(){};\n (function(){console.log("Hello World!")})();'},{text: '属性访问表达式：', jscode: ' var o = {x:1}; o.x o[\'x\']'},{text: '调用表达式：', jscode: ' func();'},{text: '对象创建表达式：', jscode: ' new Func(1,2);   new Object;'}]
+                            },{
+                                question: '6.运算符',
+                                answers: [{text: '一元(+num) 、二元：(a+b) 、三元：(c?a:b)、赋值(x+=1)、比较(a==b)、算术(a-b)、位(a|b)、逻辑(exp1 && exp2)、字符串("a"+"b")、特殊(delete obj.x)'},{
+                                    text: '特殊运算符：条件运算符(c?a:b)、逗号运算符(a,b)、delete(delete obj.x)、in("document" in window)、instanceof(obj instanceof Func)、new(new ClsName())、this(return this;)、typeof(typeof 100)、void(void 0)'
+                                },{
+                                    text: '运算符优先级：',
+                                    jscode: ''
+                                }]
+                            },{
+                                question: '7.JavaScript的语句和严格模式',
+                                answers: [{text: 'JavaScript程序由语句组成，语句遵守特定的语法规则(例if、while、with 语句等等)'},{text: 'block 块语句 ： 常用于组合0~多个语句。块语句用一对花括号{}定义（注意：没有块级作用域）'},{text: 'try catch语句 \t function语句 \t swich语句'},{text: 'for...in语句：'},{text: '1.顺序不确定 2.enumerable为false时不会出现 3.for in对象属性时受原型链影响 for(p in obj){}'},{text: '循环语句 while 、do while、 for'},{text: 'with语句：不建议用，with让js引擎优化更难 可读性差 可被变量定义代替 严格模式下被禁用	with({x:1}){console.log(x)}'},{text: '严格模式：'},{text: '是一种特殊的执行模式，它修复了部分语言上的不足，提供更强的错误检查，并增强了安全性',jscode: ' \'use strict\';\n function func(){}'},{text: '严格模式下不允许使用with、不允许为未声明的变量被赋值、arguments变为参数的静态副本、禁止八进制的字面量、eval，arguments变为关键字，不能作为变量、函数名'}]
+                            },{
+                                question: '8.几种创建对象的方式',
+                                answers: [{text: '⒈对象直接量 ----->最简单的方式 var point = {x:0,y:1} (若干名/值对组成的映射表)'},{text: '⒉通过new创建对象----->创建的过程就是使用构造函数'},{text: '⒊原型 ----->每一个对象都从原型继承属性 Object.prototype是没有原型的对象'},{text: '⒋Object.create() ----->可以通过传入参数null来创建一个没有原型的新对象'}]
+                            },{
+                                question: '9.判断属性',
+                                answers: [{text: '判断某个属性是否存在某个对象中，可以通过in运算符、hasOwnProperty()、propertyIsEnumerable()方法来完成'},{text: 'in运算符：如果有对象的自有属性或继承属性中包含这个属性，则返回true'},{text: '对象hasOwnProperty()：用来检测给定的名字是否是对象的自有属性'},{text: 'propertyIsEnumerable()：是hasOwnProperty()的增强版，只有检测到自有属性且这个属性的枚举性为true时才能返回true'},{text: '⒈这个属性必须属于实例的,并且不属于原型'}, {text: '⒉这个属性必须是可枚举的,也就是自定义的属性,可以通过for..in循环出来的'},{text: '只要符合上面两个要求,就会返回true;'}, {text: 'hasOwnProperty 是检测对象在排除原型链的情况下是否具有某个属性。'}]
+                            },{
+                                question: '10.对象标签、对象序列化',
+                                answers: [{text: '原型标签__proto__、class标签 、extensible标签'},{text: '序列化、其它对象方法',jscode: ' var obj = {x:1,y:true,z:[1,2,3],nullVal:null};\n JSON.stringify(obj); //"{"x":1,"y":true,"z":[1,2,3],"nullVal":null}"\n obj = {val:undefined,a:NaN,b:Infinity,c:new Date()};\n JSON.stringify(obj); //"{"a":null,"b":null,"c":"2017-02-09T01:39:52.591Z"}"\n obj = JSON.parse("{"x":1}"); obj.x;  //1'}]
+                            },{
+                                question: '11.数组概念',
+                                answers: [{text: '数组是值的有序集合。每个值叫做元素，每个元素在数组中都有数字位置编号，也就是索引。JS中的数组是弱类型的，数组中可以含有不同类型的元素。数组元素甚至可以是对象或其它数组。'},{text: 'ｏ var arr = [1,true,null,undefined,{x:1},[1,2,3]];'}
+                                ,{
+                                    text: 'ｏ 数组的最大长度是2^23-1'
+                                },{
+                                    text: 'ｏ 数组数组迭代 for 、for in(for in迭代注意会把数组对象原型prototype增加的属性也遍历出现，判断一下arr.hasOwnProperty()就可以过滤原型链上的一些属性)、arr.forEach(function(){})'
+                                },{
+                                    text: 'ｏ 二维数组: var arr= [[1,2],[3,4],[5,6]];'
+                                },{
+                                    text: 'ｏ 稀疏数组：并不含有从0开始的连续索引，一般length属性值比实际元素个数大。',
+                                    jscode: ' var arr1 = [undefined];\n var arr2 = new Array(1);\n 0 in arr1;//true \n 0 in arr2; //false \n arr1.length = 100; \n arr1[99] = 123; \n 99 in arr1; //true \n 98 in arr2; //false'
+                                },{
+                                    text: 'ｏ 判断是否为数组：Array.isArray(arr)、arr instanceof Array 、Object.prototype.toString.apply(arr)、arr.constructor === Array'
+                                },{
+                                    text: 'ｏ 数组检索 indexOf  和 lastIndexOf'
+                                }, {
+                                    text: 'ｏ 数组和一般对象比较：⒈相同点：都可以继承；数组是对象，对象不一定是数组；都可以当做对象添加删除属性  ⒉不同点：数组自动更新length；按索引访问数组常常比访问一般对象属性明显迅速；数组对象继承Array.prototype上的大量数组操作方法字符串和数组'
+                                },{
+                                    text: 'ｏ 字符串可以当做类似数组来操作 ；call拼接',
+                                    jscode: ' var str = "Hello World!";\n str.charAt(0); //"H" \n str[1]; //e \n Array.prototype.join.call(str,"_"); //"H_e_l_l_o_ _W_o_r_l_d_!"'
+                                }
+                                ,{
+                                    tableList: [{
+                                        property: '方法',
+                                        description: '作用',
+                                        values: [{
+                                            key: 'arr.push() ',
+                                            values: '在数组尾部添加'
+                                        }, {
+                                            key: 'arr.unshift()',
+                                            values: '在数组头部添加新元素'
+                                        }, {
+                                            key: 'arr.pop()',
+                                            values: '删除尾部元素（或arr.length-1）'
+                                        }, {
+                                            key: 'arr.shift()',
+                                            values: '删除头部元素'
+                                        }
+                                        , {
+                                            key: 'arr.join()',
+                                            values: '用数组的元素组成字符串，默认逗号隔开'
+                                        }
+                                        , {
+                                            key: 'arr.reverse()',
+                                            values: '数组逆序，原数组被修改'
+                                        }
+                                        , {
+                                            key: 'arr.sort()',
+                                            values: '排序，原数组被修改'
+                                        }
+                                        , {
+                                            key: 'arr.concat()',
+                                            values: '数组合并，原数组未修改，返回新数组'
+                                        }
+                                        , {
+                                            key: 'arr.slice(a,b)',
+                                            values: '返回a-b之间的部分数组，原数组未修改，返回新数组'
+                                        }
+                                        , {
+                                            key: 'arr.forEach(function(obj,index,arr){})',
+                                            values: '数组遍历，obj为具体元素，index是下标，arr是数组本身'
+                                        }
+                                        , {
+                                            key: 'arr.map(function(obj){})',
+                                            values: '数组映射'
+                                        }
+                                        , {
+                                            key: 'arr.filter(function(obj,index){})',
+                                            values: '数组过滤,筛选符合条件的元素'
+                                        }
+                                        , {
+                                            key: 'arr.every(function(obj){return obj>3;})',
+                                            values: '数组判断，判断数组里的元素是否全部符合条件 类似逻辑与&&'
+                                        }
+                                        , {
+                                            key: 'arr.some()',
+                                            values: '数组判断，判断数组里的元素是否存在至少一个符合条件 类似逻辑或||'
+                                        }
+                                        , {
+                                            key: 'arr.reduce(function(x,y){})',
+                                            values: '数组操作，可自定义需要的返回值'
+                                        }
+                                        , {
+                                            key: 'arr.reduceRight(function(x,y){}',
+                                            values: '数组操作，可自定义需要的返回值'
+                                        }]
+                                    }]
+                                }
+                                ]
+                            },{
+                                question: '12.函数和作用域',
+                                answers: [{text: '函数是JavaScript代码，被定义一次，但可执行或调用多次。JS中的函数也是对象，所以JS函数可以像其它对象那样操作和传递，所以我们也常叫JS中的函数为函数对象。',jscode:' //foo为函数名 x,y为参数列表 以下为函数体\n function foo(x,y) {\n if(typeof x === \'number\' && typeof y === \'number\'){\n    return x + y;\n }else{\n    return 0;\n }\n foo(1,2); // 3'},
+                                {text: 'ｏ 函数不同的调用方式：直接调用 foo(); 、对象方法 o.method(); 、构造器 new Foo(); 、call/apply/bind func.call(o);'},{
+                                    text: 'ｏ 创建函数的方式：(注意：函数声明会前置，函数表达式的变量会前置)',
+                                    jscode: ' /*函数声明*/\n function add(a,b) {\n    a = +a;\n    b = +b;\n    if(isNaN(a) || isNaN(b)){\n       return;\n    }\n    return a + b;\n }\n /*函数表达式*/ \n // 1.function variable 函数变量\n var add = function(a,b){\n    // do something\n }\n // 2.IEF(Immediately Executed Function)立即执行函数表达式\n (function(){\n    // do sth\n })();\n // 3.first-class function 返回函数对象\n return function() {\n    // do sth\n }\n // 4.NFE(Named Function Expression)命名式函数表达式\n var add = function foo(a,b){\n    // do sth\n };'
+                                },{
+                                    text: 'ｏ Function 构造器',
+                                    jscode: ' var func = new Function(\'a\',\'b\',\'console.log(a+b);\');\n func(1,2); //3\n var func = Function(\'a\',\'b\',\'console.log(a+b);\');\n func(1,2); //3',
+                                },{
+                                    text: 'ｏ 三种对比方式：'
+                                },{
+                                    text: '1.函数声明可以被前置、在定义该函数的作用域通过函数名访问'
+                                },{
+                                    text: '2.函数表达式允许匿名、立即调用'
+                                },{
+                                    text: '3.函数构造器只能匿名、立即调用、没有函数名'
+                                },{
+                                    text: 'ｏ this：'
+                                },{
+                                    text: '1.全局this',
+                                    jscode: ' this === window // true'
+                                },{
+                                    text: '2.一般函数的this',
+                                    jscode: ' function f1() {\n    return this;\n }\n f1() === window; // true this指向全局对象'
+                                },{
+                                    text: '3.作用对象方法的函数的this',
+                                    jscode: ' var o = {\n    prop: 37,\n    f:function(){\n       return this.prop;\n    }\n };\n o.f(); // 37\n var o = {prop: 37};\n function independent(){\n    return this.prop;\n }\n o.f = independent;\n o.f(); // 37'
+                                },{
+                                    text: '4.对象原型链上的this',
+                                    jscode: ' var o = {f:function(){\n    return this.a + this.b;\n }};\n var p = Object.create(o);\n p.a = 1;\n p.b = 4;\n p.f(); //5'
+                                },{
+                                    text: '5.get/set方法与this',
+                                    jscode: ' function modulus(){\n    return Math.sqrt(this.re * this.re + this.im * this.im);\n }\n var o = {\n    re: 1,\n    im: -1,\n    get phase(){\n      return Math.atan2(this.im,this.re);\n    }\n };\n Object.defineProperty(o,\'modulus\',{\n    get: modulus,enumerable:true,configurable:true\n });\n o.phase; //-0.7853981633974483\n o.phase; //-0.7853981633974483'
+                                },{
+                                    text: '6.构造器中的this',
+                                    jscode: ' function MyClass(){\n    this.a = 37;\n }\n var o = new MyClass();\n o.a; //37\n function C2(){\n    this.a = 37;\n    return {a:38};\n }\n o.new C2();\n o.a; //38'
+                                },{
+                                    text: '7.call/apply 方法与this',
+                                    jscode: ' function add(c,d){\n    return this.a + this.b + c + d;\n }\n var o = {a:1,b:3};\n add.call(o,5,7); //1+3+5+7 = 16\n add.apply(o,[10,20]); //1+3+10+20 = 34\n function bar(){\n    console.log(Object.prototype.toString.call(this));\n }\n bar.call(7); //"[object Number]"'
+                                },{
+                                    text: '8.bind方法与this',
+                                    jscode: ' function f(){\n    return this.a;\n }\n var g = f.bind({a:\'test\'});\n g(); //test\n var o = {a:37,f:f,g:g};\n o.f(); //37\n o.g(); //test'
+                                },{
+                                    text: 'ｏ 判断this的指向（1-4优先级逐级递减，1优先级最高，4优先级最低）：',
+                                    childtext: [
+                                    {text:'1、函数被new调用，this指向由new新构造出来的这个对象；'},
+                                    {text: '2、函数通过call()、apply()、bind()调用，this指向被绑定的对象；'},
+                                    {text: '3、函数作为方法被调用，this指向这个对象（即常说的对象上下文）；'},{text: '4、默认（非严格模式）情况下，this指向window,  严格模式下，this指向undefined。'}]
+                                },{
+                                    text: 'ｏ 函数属性和arguments',
+                                    jscode: ' function foo(x,y,z){\n    arguments.length; //2  实参个数\n    arguments[0]; //1\n    //绑定关系\n    arguments[0] = 10;\n    x; //change to 10\n    //未传参数失去绑定关系\n    arguments[2] = 100;\n    z; //undefined\n    arguments.callee === foo; //true 严格模式下不能使用\n }\n foo(1,2);\n foo.length; //3  形参个数\n foo.name; //"foo" 函数名'
+                                },{
+                                    text: 'ｏ 作用域：JS只有全局作用域和局部（函数）作用域，没有块级作用域。所以在条件语句、循环语句等内部声明的变量，在语句外也是可以访问到的。'
+                                },{
+                                    text: '作用域链：内部作用域可以访问外部作用域中的变量和函数，作用域链的前端为当前执行环境、终端为全局环境。'
+                                },{
+                                    text: '全局作用域',
+                                    jscode: 'var a = 10; a; //10'
+                                },{
+                                    text: '函数作用域',
+                                    jscode: ' (function(){\n    var b = 20;\n })();\n b; //error,b in not defined\n for(var item in {a:1,b:2}){\n    console.log(item);\n }\n item;	//item still in scope'
+                                },{
+                                    text: 'eval作用域',
+                                    jscode: ' eval("val a = 1;");'
+                                },{
+                                    text: '使用 new Function(); 是无法访问到闭包里的 局部变量的。'
+                                },{
+                                    text: '变量对象(Variable Object,缩写为VO)：是一个抽象概念中的"对象",它用于存储执行上下文的：1.变量 2.函数声明 3.函数参数'
+                                }]
+                            },{
+                                question: '13.闭包',
+                                answers: [{
+                                    text: '在计算机科学中，闭包(也称词法闭包或函数闭包)是指一个函数或函数的引用，与一个引用环境绑定在一起。这个引用环境是一个存储该函数每个非局部变量(也叫自由变量)的表。闭包不同于一般的函数，它允许一个函数在立即词法作用域外调用时，仍可访问非本地变量。'
+                                },{
+                                    text: 'ｏ 闭包的理解就是：闭包就是能够读取其它函数内部变量的函数，可以把闭包理解成“定义在一个函数内部的函数”，所以在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。'
+                                },{
+                                    text: 'ｏ 闭包的作用：闭包可以用在许多地方，它最大的用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。',
+                                    jscode: ' function f1(name) {\n    function f1(name) {\n       console.log(name);\n    }\n }\n var ff = f1(\'jack\');\n ff(); //jack\n\n function f2() {\n    var age = 18;\n    this.getAge = function() {\n       console.log(age);\n    };\n }\n var p = new f2();\n p.getAge(); //18'
+                                },{
+                                    text: 'ｏ 叹号后面跟函数!function和加号后面跟函数+function都是跟(function(){})();这个函数是一个意思，都是告诉浏览器自动运行这个匿名函数的，因为!+()这些符号的运算符是最高的，所以会先运行它们后面的函数 function前面的() 或者 ! 或者 + 的目的是将匿名函数声明转变为函数表达式，防止解析器提前解析function，造成语法错误。',
+                                    childtext: [{text: '没有方法名就是匿名函数：'},{text: '第一种：', jscode: ' function () {\n    console.log("匿名函数")\n }\n //调用\n var myFunc = function () {\n    console.log("我是匿名函数吗");\n };\n myFunc();'},{text: '第二种：用小括号把匿名函数括起来，直接调用', jscode: ' (function (n1,n2) {\n    n1 + n2;\n })(100,200);'}]
+                                },{
+                                    text: 'ｏ 闭包的优点：灵活方便 、封装 ；  缺点：空间浪费、内存泄漏、性能消耗'
+                                }]
+                            },{
+                                question: '14.JavaScript性能优化',
+                                answers: [{
+                                    text: 'ｏ 加载和执行',
+                                    childtext: [{text: '● <body>闭合标签之前，将所有的<script>标签放在页面底部。这能确保在脚本执行前页面已经完成了渲染。'}, {text: '● 合并脚本。页面中的<script>标签越少，加载也就越快，响应也更迅速。无论外链文件还是内嵌脚本都是如此。'},{text: '● 有多中无阻塞下载JavaScript的方法：'},{text: '━使用<script>标签的defer属性'},{text: '━使用动态创建的<script>元素来下载并执行代码'},{text: '━使用XHR对象下载JavaScript代码并注入页面中'}]
+                                },{
+                                    text: 'ｏ 数据存取',
+                                    childtext: [{text: '在JavaScript中，数据存储的位置会对代码整体性能产生重大影响，数据存储共有4种方式：字面量、变量、数组项、对象成员。'}, {text: '● 访问字面量和局部变量的速度最快，相反，访问数组元素和对象成员相对较慢。'},{text: '● 由于局部变量存在于作用域链的起始位置，因此访问局部变量比访问跨作用域变量更快。变量在作用域链中的位置越深，访问所需时间就越长。由于全局变量总处在作用域链的最末端，因此访问速度也是最慢的。'},{text: '● 避免使用with语句，因为它会改变执行环境作用域链。同样，try-catch语句中的catch字句也有同样的影响，因此也要小心使用。'},{text: '● 嵌套的对象成员会明显影响性能，尽量少用。'},{text: '● 属性和方法在原型链中的位置越深，访问它的速度也越慢。'},{text: '● 通常来说，你可以通过把常量的对象成员、数组元素、跨域变量保存在局部变量中来改善JavaScript性能，因为局部变量访问速度更快。'}]
+                                },{
+                                    text: 'ｏ DOM',
+                                    childtext: [{text: '● 最小化DOM访问次数，尽可能在JavaScript端处理。'},{text: '● 如果需要多次访问某个DOM节点，请使用局部变量存储它的引用。'},{text: '● 小心处理HTML集合，因为它实时连接着底层文档。把集合的长度缓存到一个变量中，并在迭代中使用它。如果需要经常操作集合，建议把它拷贝到一个数组中。'},{text: '● 如果可能的话，使用更快的API。比如querySelectorAll() 和 firstElementChild。'},{text: '● 要留意重绘和重排，批量修改样式时，“离线”操作DOM树，使用缓存，并减少访问布局信息的次数。'},{text: '● 动画中使用绝对定位，使用拖放代理。'},{text: '● 使用事件委托来减少事件处理器的数量。'}]
+                                },{
+                                    text: 'ｏ 算法和流程控制',
+                                    childtext: [{text: '● for while和do-while循环性能特性相当，并没有一种循环类型明显快于或慢于其他类型。'},{text: '● 避免使用for-in循环，除非你需要遍历一个属性数量未知的对象。'},{text: '● 改善循环性能的最佳方式是减少每次迭代的运算量和减少循环迭代次数。'},{text: '● 通常来说，switch总是比if-else快，但并不总是最佳解决方案。'},{text: '● 浏览器的调用栈大小限制了递归算法在JavaScript中的应用；栈溢出错误会导致其它代码中断运行。'},{text: '如果你遇到栈溢出错误，可将方法改为迭代算法，或使用Memoization来避免重复计算。'}]
+                                },{
+                                    text: 'ｏ 字符串和正则表达式（密集的字符串操作和草率的编写正则表达式可能产生严重的性能障碍）',
+                                    childtext: [{text: '● 当连接数量巨大或尺寸巨大的字符串时，数组项合并是唯一在IE7 以及更早版本中性能合理的方法。'},{text: '● 如果不需考虑IE7更早版本性能，数组项合并是最慢的字符串连接方法之一，推荐使用简单的+和+=操作符代替，避免不必要的中间字符串。'},{text: '● 回溯既是正则表达式匹配功能的基本组成部分，也是正则表达式的低效之源。回溯失控发生在正则表达式本应快速匹配的地方，但因某些特殊字符串匹配动作导致运行缓慢甚至浏览器奔溃。避免这个问题的方法是：使相邻的字元互斥，避免嵌套词对同一字符串的相同部分多次匹配，通过重复利用预查的原子组去除不必要的回溯。'},{text: '● 提高正则表达式效率的各种技术手段会有助于正则表达式更快的匹配，并在非匹配位置花更少的时间。'},{text: '● 正则表达式并不总是完成工作的最佳工具，尤其当你搜索字面字符串的时候。'}]
+                                },{
+                                    text: 'ｏ 快速响应的用户界面',
+                                    childtext: [{text: 'JavaScript和用户界面更新在同一个进程中运行，因此一次只能处理一件事。这意味着当JavaScript代码正常运行时，用户界面不能响应输入，反之亦然。高效管理UI线程就是确保JavaScript不能运行太长时间，以免影响用户体验。'},{text: '● 任何JavaScript任务都不应当执行超过100毫秒，过长的运行时间会导致UI更新出现明显的延迟，从而用户体验产生负面影响。'},{text: '● JavaScript运行期间，浏览器响应用户交互的行为存在差异。无论如何，JavaScript长时间运行导致用户体验变混乱和脱节。'},{text: '● 定时器可安排代码延时执行'},{text: '● Web Workers是新版浏览器支持的特性，它允许你UI线程外部执行JavaScript代码，从而避免锁定UI'},{text: 'web应用越复杂，积极主动的管理UI线程越重要，用户体验首当其中'}]
+                                },{
+                                    text: 'ｏ AJAX',
+                                    childtext: [{text: '● '},{text: '● '},{text: '● '},{text: '● '},{text: '● '},{text: ''}]
+                                }]
+                            },{
+                                question: '15.介绍一下XMLHttpRequest对象的常用方式和属性？',
+                                answers: [{
+                                    text: 'ｏ open("method",URL)建立对服务器的调用，第一个参数是HTTP请求方式，可以为GET，POST或任何服务器所支持的你想调用的方式。'
+                                },{text: '第二个参数是请求页面的URL。',childtext: [{text: '● send()方法，发送具体请求'},{text: '● abort()方法，停止当前请求'},{text: '● readyState属性，请求的状态 有5个可取值 0=未初始化 1=正在加载 2=已加载 3=交互中 4=完成'},{text: '● responseText属性 服务器的响应，表示为一个串'},{text: '● responseXML属性 服务器的响应，表示为XML'},{text: '● status 服务器的HTTP的状态码，200对应ok 400对应not found'}]}]
+                            },{
+                                question: '16.URI地址获取对应参数的值，请写出最优的代码。',
+                                answers: [{
+                                    jscode: 'var URL = "http://www.google.com/query?"'
+                                }]
+                            },{
+                                question: '17.请使用原生JavaScript给下面列表的节点绑定点对象，兼容IE和标准浏览器？',
+                                answers: [{
+                                    htmlcode: '<body>\n  <p>使用原生JavaScript给下面列表中的结点绑定点击事件，点击时创建一个Object对象，兼容IE和标准浏览器</p>\n  <ul id="nav">\n    <li><a href="【聚划算】无所不能聚">品牌团</a></li>\n    <li><a href="【聚划算】整点聚_抢运气享乐趣">整点聚</a></li>\n    <li><a href="【聚划算】聚家装">聚家装</a></li>\n    <li><a href="【聚划算】量贩团">量贩团</a></li>\n  </ul>\n</body>',
+                                    jscode: 'var li_class = document.getElementById(\'nav\').getElementByTagName(\'li\');\nfor(var i = li_class.length - 1;i >= 0;i--){\n  (function(i){\n    li_class[i].addEventListener(\'click\',function(e){\n      console.log({index:i,name:li_class[i].firstElementChild.innerHTML,link:li_class[i].firstElementChild.href});\n    });\n    e.preventDeafault();\n  })(i)\n}'
+                                }]
+                            },{
+                                question: '18.请使用原生JavaScript给Array本地对象增加一个原型方法，用于删除数组中重复的数据，返回一个包含被删除的数据的新数组。',
+                                answers: [{
+                                    jscode: 'Array.prototype.distinct = function(){\n  var arr = [];\n  var obj = {};\n  for(var i = 0;i < this.length;i++){\n    if(obj[this[i]] == undefiend)\n        obj[this[i]] == this[i];\n    else if(obj[this[i]])\n        arr.push(this[i]);\n  }\n  return arr;\n}\nalert([\'a\',\'b\',\'c\',\'d\',\'e\'].distinct());'
+                                }]
+                            },{
+                                question: '19.请说明setTimeOut和setInterval的区别？',
+                                answers: [{
+                                    text: 'setTimeOut只加载一次，setInterval每隔指定时间就执行一次表达式'
+                                }]
+                            },{
+                                question: '20.怎样添加、移除、移动、复制、创建和查找节点',
+                                answers: [{
+                                    text: 'ｏ 创建节点：',
+                                    childtext: [{text: '● createDocumentFragment() //创建一个DOM片段'},{text: '● createElement() //创建一个具体的元素'},{text: '● createTextNode() //创建一个文本节点'}]
+                                },{
+                                    text: 'ｏ 添加、移除、替换、插入',
+                                    childtext: [{text: '● appendChild() //添加'},{text: '● removeChild() //移除'},{text: '● replaceChild() //替换'},{text: '● insertChild() //插入'}]
+                                },{
+                                    text: 'ｏ 查找',
+                                    childtext: [{text: '● getElementById() //通过id 唯一性'},{text: '● getElementByTagName //通过标签名称'},{text: '● getElementByName //通过Name属性'},{text: '● getElementByClassName //通过样式名'}]
+                                }]
+                            },{
+                                question: '21.实现一个函数clone，可以对JavaScript中的5种主要的数据类型(包括Number、String、Object、Array、Boolean)进行值复制',
+                                answers: [{
+                                    jscode: '/**\n* 对象克隆\n* 支持基本数据类型及对象\n* 递归方法\n**/\nfunction clone(obj){\n  var o;\n  swich (typeof obj){\n    case "undefiend":\n      break;\n    case "string":\n      o = obj + "";\n      break;\n    case "boolean":\n      0 = obj;\n      break;\n    case "number":\n      o = obj - 0;\n      break;\n    case "object":// object 分为两种情况 对象（Object）或数组（Array）\n      if(obj === null){\n        o = null;\n      }else{\n        if(Object.prototype.toString.call(obj).slice(8,-1) === "Array") {\n          o = [];\n          for(var i = 0; i < obj.length; i++){\n            o.push(clone(obj[i]));\n          }\n        } else {\n          o = {};\n          for (var k in obj) {\n            o[k] = clone(obj[k]);\n          }\n        }\n      }\n      break;\n    default:\n      o = obj;\n      break;\n  }\n   return o;\n}'
+                                }]
+                            },{
+                                question: '22.如何消除一个数组里面重复的元素？',
+                                answers: [{
+                                    jscode: 'var arr1 = [1,2,2,2,2,3,4],\narr2 = [];\nfor(var i = 0; i < arr1.length; i++){\n  if(arr2.indexOf(arr1[i]) < 0) {\n    arr2.push(arr1[i]);\n  }\n}\nconsole.log(arr2); //[1,2,3,4]'
+                                }]
+                            },{
+                                question: '23.在JavaScript中什么是伪数组？如何将伪数组转化为标准数组',
+                                answers: [{
+                                    text: '伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对正在数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组，可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。',
+                                    jscode: 'function log(){\n  var args = Array.prototype.slice.call(arguments);\n  //为了使用unshift数组方法，将argument转化为正在的数组\n  args.unshift(\'(app)\');\n  console.log.apply(console,args);\n}'
+                                }]
+                            },{
+                                question: '24.JavaScript中的callee和caller的作用？',
+                                answers: [{
+                                    text: 'caller是返回一个对函数的引用，该函数调用了当前函数；'
+                                },{text: 'callee是返回正在被执行的function函数，也就是所指定的function对象的正文'}]
+                            },{
+                                question: '25.请描述一下cookie，sessionStronge和localStronge的区别',
+                                answers: [{
+                                    text: 'ｏ sessionStronge用于本地存储的一个session中的数据，这些数据只有在同一个session中的页面才能访问并且当session结束后数据也随之销毁。因此sessionStronge不是一种持久化的本地存储，仅仅是会话级别的存储。而localStronge用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的'
+                                },{text: 'ｏ web stronger 和 cookie的区别',childtext: [{text: 'Web Storage的概念和cookie相似，区别是它为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。'},{text: '除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。'}]}]
+                            },{
+                                question: '26.统计字符串中字母个数或统计最多字母数',
+                                answers: [{
+                                    jscode: ' var str = "dsuiaghdguiwqidhuiweghu";\n var obj = {};\n for(var i = 0; i < str.length; i++){\n   var v = str.charAt(i);\n   if(obj[v] && obj[v].value == v){\n     obj[v].count = ++ obj[v].count;\n   }else{\n     obj[v] = {};\n     obj[v].count = 1;\n     obj[v].value = v;\n   }\n }\n for(key in obj){\n   document.write(obj[key].value +\'=\'+obj[key].count+\'&nbsp;\'); // a=4  b=3  c=4  d=2  f=1  g=1  h=1\n }'
+                                }]
+                            },{
+                                question: '27.手写数组快速排序',
+                                answers: [{text: '"快速排序"的思想很简单，整个排序过程只需要三步：',childtext: [{text: '（1）在数据集之中，选择一个元素作为"基准"（pivot）。'},{text: '（2）所有小于"基准"的元素，都移到"基准"的左边；所有大于"基准"的元素，都移到"基准"的右边。'},{text: '（3）对"基准"左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。'}],jscode: 'var quickSort = function(arr) {\n  if(arr.lengt <= 1){\n    return arr;\n  }\n  var pivotIndex = Math.floor(arr.length / 2);\n  var pivot = arr.splice(pivotIndex, 1)[0];\n  var left = [],right = [];\n  for (var i = 0; i < arr.length; i++) {\n    if (arr[i] < pivot) {\n      left.push(arr[i]);\n    } else {\n      right.push(arr[i]);\n    }\n  }\n  return quickSort(left).concat([pivot], quickSort(right));\n};'}]
+                            },{
+                                question: '28.JavaScript实现二分法查找',
+                                answers: [{text: '二分法查找，也称折半查找，是一种在有序数组中查找特定元素的搜索算法。查找过程可以分为以下步骤：',childtext: [{text: '（1）首先，从有序数组的中间的元素开始搜索，如果该元素正好是目标元素（即要查找的元素），则搜索过程结束，否则进行下一步。'},{text: '（2）如果目标元素大于或者小于中间元素，则在数组大于或小于中间元素的那一半区域查找，然后重复第一步的操作。'},{text: '（3）如果某一步数组为空，则表示找不到目标元素。'}],jscode: '//非递归算法\nfunction binary_search(arr,key){\n  var low = 0,\n      high  = arr.length - 1;\n  while(low <= high){\n    var mid = parseInt((high + low) / 2);\n    if(key == arr[mid]){\n      return mid;\n    }else if(key > arr[mid]){\n      low = mid + 1; \n    }else if(key < arr[mid]){\n      high = mid - 1;\n    }else{\n      return -1;\n   }\n  }\n};\nvar arr = [1,2,3,4,5,6,7,8,9,10,11,23,44,86];\nvar result = binary_search(arr,10);\nconsole.log(result); //9\n//递归算法\nfunction binary_search(arr, low, high, key){\n  if(low > high){\n   return -1;\n  }\n  var mid = parseInt((high + low) / 2);\n  if(arr[mid] == key){\n   return mid;\n  }else if(arr[mid] > key){\n   high = mid - 1;\n   return binary_search(arr, low, high, key);\n  }else if(arr[mid] < key){\n   low = mid + 1;\n   return binary_search(arr, low, high, key);\n  }\n};\nvar arr = [1,2,3,4,5,6,7,8,9,10,11,23,44,86];\nvar result = binary_search(arr, 0, 13, 10);\nconsole.log(result); // 9 返回目标元素的索引值'}]
+                            },{
+                                question: '29.写一个function，清除字符串前后的空格。（兼容所有浏览器）',
+                                answers: [{
+                                    jscode: 'function trim(str){\n  if (str && typeof str === "string") {\n     return str.replace(/(^\s*)|(\s*)$/g,"");//去除前后空白符\n  }\n}'
+                                }]
+                            },{
+                                question: '30.使用正则表达式验证邮箱格式',
+                                answers: [{
+                                    jscode: 'var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/;\nvar email = "example@qq.com";\nconsole.log(reg.test(email));  // true  '
+                                }]
+                            },{
+                                question: '31.bind(), call(), apply() 是什么？什么时候使用？解决什么问题？',
+                                answers: [{
+                                    text: 'call/apply/bind方法的来源：这三个方法其实都是继承自Function.prototype中的，属于实例方法。',
+                                    jscode: 'console.log(Function.prototype.hasOwnProperty(\'call\')) // true\nconsole.log(Function.prototype.hasOwnProperty(\'apply\')) // true\nconsole.log(Function.prototype.hasOwnProperty(\'bind\')) //true'
+                                },{childtext: [{text: '上面代码中，都返回了true，表明三种方法都是继承自Function.prototype的。当然，普通的对象，函数，数组都继承了Function.prototype对象中的三个方法，所以这三个方法都可以在对象，数组，函数中使用。'},{text: 'bind()方法是将某个函数绑定到某个对象上，而call和apply方法则可以看作是某个对象上的方法，通过调用方法的形式来间接调用函数。如下例子：'}],jscode: 'var zlw = {\n  name: "zlw",  \n  sayHello: function (age) {\n    console.log("hello, i am ", this.name + " " + age + " years old");\n  }\n}\nvar xlj = { name: "xlj",};\nzlw.sayHello(24);\n// 调用方式：\nzlw.sayHello.call(xlj, 24); // hello, i am xlj 24 years old\nzlw.sayHello.apply(xlj, [24]); // hello, i am xlj 24 years old\nzlw.sayHello.bind(xlj)(24); // hello, i am xlj 24 years old\nzlw.sayHello.bind(xlj)([24]); // hello, i am xlj 24 years old'},{
+                                    childtext:[{text: 'bind方法还可以这样写 fn.bind(obj,arg1)(arg2) '},{text: 'bind() 方法和前两者不同在于：bind() 方法会返回执行上下文被改变的函数而不会立即执行，而前两者是直接执行该函数。他的参数和call()相同。'}]
+                                },{text: '这三个方法的作用都是改变函数的执行上下文！通俗点就是说来切换/固定this的指向。'}]
+                            },{
+                                question: '32.Array.prototype.reduce() 什么时候使用？解决什么问题？',
+                                answers: [{
+                                    jscode: 'reduce(function(a,b){\n\n},initialValue)',
+                                    text: '第一个参数为回调方法，第二个参数为初始值。回调函数也有两个参数，第一个为上一次回调函数返回的结果（第一次则为初始值），第二个参数为数组中的下一个值。在没有传入初始值的时候，回调函数执行数组长度减一。有传入值，则执行数组长度。'
+                                }]
+                            },{
+                                question: '33.快速的让一个数组乱序',
+                                answers: [{
+                                    jscode: 'var arr = [1,2,3,4,5,6,7,8,9,10];\narr.sort(function(){\n  return Math.random() - 0.5;\n})\nconsole.log(arr);'
+                                }]
+                            },{
+                                question: '34.JS 判断设备来源',
+                                answers: [{
+                                    jscode: 'function deviceType(){\n  var ua = navigator.userAgent;\n  var agent = ["Android", "iPhone","SymbianOS","Windows Phone", "iPad", "iPod"];\n  for(var i=0; i<len,len = agent.length; i++){\n    if(ua.indexOf(agent[i])>0){ break; }\n  }\n}\ndeviceType();\nwindow.addEventListener(\'resize\',function () {\n  deviceType();\n})\n// 微信判断\nfunction isWeixin() {\n  var ua = navigator.userAgent.toLowerCase();\n  if (ua.match(/MicroMessenger/i) == \'micromessenger\') {\n    return true;\n  } else {\n    return false;\n  }\n}'
+                                }]
+                            },{
+                                question: 'ES5(ECMAScript)',
+                                answers: [{
+                                    text: ''
+                                }]
+                            },{
+                                question: 'ES6(ECMAScript6)',
+                                answers: [{
+                                    text: 'ECMAScript6 (简称ES6) 是JavaScript语言的下一代标准。因为当前版本的ES6是2015年发布的，所以又称ECMAScript2015。',
+                                    childtext: [{text: 'Babel是一个广泛的使用ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。https://babeljs.io'}]
+                                },{
+                                    text: '最常用的ES6特性：',
+                                    childtext: [{text: 'let, const, class, extends, super, arrow functions, template string, destructuring, default, rest arguments'}]
+                                },{
+                                    text: 'ｏ let, const',
+                                    childtext: [{text: '这两个用途与var类似，都是用来声明变量，但实际运用中它们有各自用途',jscode: ' var name = \'zach\'\n while(true){\n    var name = \'obama\'\n   console.log(name) //obama\n   break\n }\n console.log(name) //obama'},{text: '上面使用var 两次都是输出obama，这是因为ES5只有全局作用域和函数作用域，没有块级作用域，这带来很多不合理的场景。第一种场景就是现在看到的内层变量覆盖外层变量。而let则实际上为JavaScript新增了块级作用域。用它所声明的变量，只在let命令所在的代码块内有效。',jscode: ' let name = \'zach\'\n while(true){\n    let name = \'obama\'\n    console.log(name) //obama\n    break\n }\n console.log(name) //zach'},{text: '另外一个var带来的不合理场景就是用来计数的循环变量泄漏为全局变量',jscode: ' var a = []\n for(var i = 0; i < 10; i++){\n    a[i] = function(){\n        console.log(i);\n    };\n }\n a[6]; //10'},{text: '以上代码中， 变量i是var声明的，在全局范围内都有效，所有每一次循环，新的i值都会覆盖旧值，导致最后输出的是最后一轮的i的值。而使用let不会出现此问题。'},{text: 'const 也用来声明变量，但是声明的是常量。一旦声明，常量的值就不能改变。', jscode: ' const PI = Math.PI\n PI = 23 //Module build failed: SyntaxError: /es6/app.js: "PI" is read-only'},{text: '当我们尝试去改变const声明的常量时，浏览器就会报错。 const 有一个很好的应用场景，当我们应用第三方库声明的变量，用const来声明可以避免未来不小心重命名而导致出现的bug',jscode: 'const monet = require(\'moment\')'}],tableList: [{
+                                        property: '变量',
+                                        description: '差异',
+                                        values: [{
+                                            key: 'let',
+                                            values: '允许你声明一个作用域被限制在块级中的变量、语句或者表达式。let绑定不受变量提升的约束，这意味着let声明不会被提升到当前该变量处于从块开始到初始化处理的“暂存死区”。'
+                                        },{
+                                            key: 'var',
+                                            values: '声明变量的作用域限制在其声明位置的上下文中，而非声明变量总是全局的，由于变量声明（以及其他声明）总是在任意代码执行之前处理的，所以在代码中的任意位置声明变量总是等效于在代码开头声明'
+                                        },{
+                                            key: 'const',
+                                            values: '声明创建一个值的只读引用 (即指针)。这里就要介绍下 JS 常用类型String、Number、Boolean、Array、Object、Null、Undefined。其中基本类型 有 Undefined、Null、Boolean、Number、String，保存在栈中；复合类型 有 Array、Object ，保存在堆中；基本数据当值发生改变时，那么其对应的指针也将发生改变，故造成 const申明基本数据类型时，再将其值改变时，将会造成报错，例如 const a = 3 ; a = 5 时 将会报错；但是如果是复合类型时，如果只改变复合类型的其中某个Value项时，将还是正常使用；'
+                                        }]
+                                    }]
+                                },{
+                                    text: 'let',
+                                    childtext: [{text: '(1) let声明的变量只在所在代码块内有效'},{
+                                        text: '(2) 很适合做for循环'
+                                    },{text: '(3) 必须先声明后使用'},{text: '(4) 不允许重复声明'},{text: '(5) 不允许重新声明参数'}]
+                                },{
+                                    text: 'const',
+                                    childtext: [{text: '(1) 声明一个只读的常量，不能修改'},{
+                                        text: '(2) 只在所在块内有效'
+                                    },{text: '(3) 先声明后使用'},{text: '(4) 不能重复声明'}]
+                                },{
+                                    text: 'ｏ class,extends,super',
+                                    childtext: [{text: '这三个特性涉及了ES5中的几个复杂的部分；原型、构造函数、继承...'},{text: 'ES6提供了更接近传统语言的写法，引入了Class(类)这个概念。新的Class写法让对象原型更加清晰，更像面向编程的语法。', jscode: ' class Anima{ //用class定义一个"类"\n    constructor(){ //constructor 构造方法\n       this.type = \'animal\' //this 代表示例对象\n    }\n    says(say){\n       console.log(this.type+\' says \' + say)\n    }\n }\n let animal = new Animal()\n animal.says(\'hello\') //animal says hello\n class Cat extends Aniaml{ //定义Cat类 并继承Anima类(继承了Anima类所有属性和方法)\n    constructor(){\n       super()\n       this.type = \'cat\'\n    }\n }\n let cat = new Cat()\n cat.says(\'hello\') //cat says hello'},{text: '● constructor内定义的方法和属性是实例对象自己的，而constructor外定义的方法和属性则是所有实例对象可以共享的。'},{text: '● Class 之间可以通过extends关键字实现继承，这比ES5的通过修改原型链实现继承，要清晰和方便很多。'},{text: '● super关键字，它指代父类的实例(即父类的this对象)。子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。'},{text: '● ES6的继承机制，实质是先创造父类的实例对象this(所以必须先调用super方法)，然后再用子类的构造函数改this。'}]
+                                },{text: 'ｏ 箭头函数arrow function',jscode: ' // ES5写法\n function(i){\n    return i + 1;\n }\n function(x,y) {\n    x++;\n    y--;\n    return x + y;\n } \n // ES6写法\n (i) => i + 1;\n (x,y) => {x++;y--;x + y}'},{text: '除了看上去更简洁以外，arrow function还有一项超级无敌的功能！长期以来，JavaScript语言的this对象一直是一个令人头痛的问题，在对象方法中使用this，必须非常小心。',jscode: ' class Anima{\n   constructor(){ //constructor 构造方法\n    this.type = \'animal\'\n   }\n   says(say){\n     setTimeout(function(){\n       console.log(this.type + \' says \' + say)\n     }, 1000)\n   }\n }\n var animal = new Animal()\n animal.says(\'hi\') //undefined says hi'},{text:'运行上面的代码会报错，这是因为setTimeout中的this指向的是全局对象。所以为了让它能够正确的运行，传统的解决方法有两种：'},{text: '1.将this传给变量self，再用self来指代this',jscode: 'says(say){\n var self = this;\n setTimeout(function(){\n  console.log(self.type + \' says \' + say)\n }, 1000)\n}'},{text: '2.用bind(this)',jscode: 'says(say){\n setTimeout(() =>{\n  console.log(this.type + \' says \' + say)\n },bind(this), 1000)\n}'},{text: '而用arrow function解决了this指向',jscode: ' class Anima{\n   constructor(){ //constructor 构造方法\n    this.type = \'animal\'\n   }\n   says(say){\n     setTimeout(function(){\n       console.log(this.type + \' says \' + say)\n     }, 1000)\n   }\n }\n var animal = new Animal()\n animal.says(\'hi\') //animal says hi'},{text: '实际原因是箭头函数根本没有自己的this，它的this是继承外面的，因此内部的this就是外层代码块的this。'}, {text: 'ｏ template string'},{text: '当我们要插入大段的html内容到文档中时，传统的写法非常麻烦，所以之前我们通常会引用一些模板工具库，比如mustache等等', jscode: ' //ES5\n $(\'#result\').append(\n    "There are <b>" + basket.count + "</b> " +\n    "items in your basket, " +\n    "<em>" + basket.onSale +\n    "</em> are on sale!"\n );\n //ES6\n $(\'#result\').append(\n    `There are <b>${break.count}</b> \n    items in your basket, \n    <em>${basket.onSale}</em> \n    are on sale!`\n }'},{text: '用反引号(`)来标识起始，用${}来引用变量，而且所有的空格和缩进都会保留在输出之中'},{text: 'ｏ ...（扩展运算符）'},{text: '扩展运算符（ spread ）是三个点（...）。它好比 rest 参数的逆运算，将一个数组转为用逗号分隔的参数序列。', jscode: ' console.log(...[1, 2, 3])  // 1 2 3\n console.log(1, ...[2, 3, 4], 5)\n // 1 2 3 4 5\n [...document.querySelectorAll(\'div\')]\n // [<div>, <div>, <div>] '},{text: '该运算符主要用于函数调用',jscode: ' function push(array, ...items) { \n   array.push(...items);\n }\n   function add(x, y) {\n   return x + y;\n }\n var numbers = [4, 38]; \n add(...numbers) // 42'},{text: '上面代码中，array.push(...items)和add(...numbers)这两行，都是函数的调用，它们的都使用了扩展运算符。该运算符将一个数组，变为参数序列。'},{text: '扩展运算符与正常的函数参数可以结合使用，非常灵活。',jscode: ' function f(v, w, x, y, z) { }\n var args = [0, 1];\n f(-1, ...args, 2, ...[3]);'},{
+                                    text: 'ｏ destructuring'
+                                },{text: 'ES6允许按照一定的模式，从数组和对象中提取值，这被称为解构（Destructuring）。',jscode: ' let cat = \'ken\'\n let dog = \'lili\'\n let zoo = {cat: cat, dog: dog}\n console.log(zoo)  //Object {cat: "ken", dog: "lili"}\n //ES6完全可以像下面这么写：\n let cat = \'ken\'\n let dog = \'lili\' let zoo = {cat, dog}\n console.log(zoo)  //Object {cat: "ken", dog: "lili"}\n //反过来可以这么写：\n let dog = {type: \'animal\', many: 2}\n let { type, many} = dog\n console.log(type, many) //animal 2'},{
+                                    text: 'ｏ default,rest'
+                                },{text: '调用animal() 方法时忘了传参数，传统的做法就是加上这一句type = type || \'cat\'来指定默认值',jscode: ' //ES5\n function animal(type){\n    type = type || \'cat\'\n    console.log(type)\n }\n animal()\n //ES6\n function animal(type = \'cat\'){\n    console.log(type)\n }\n animal()\n //rest语法：\n function animal(...types){\n    console.log(types)\n }\n animals(\'cat\', \'dog\', \'fish\') //["cat", "dog", "fish"]\n //而如果不用ES6的话，我们则得使用ES5的arguments'}]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'JSON',
+                        content: [{
+                            title: 'JSON',
+                            questionList: [{
+                                question: '什么是 JSON ？',
+                                answers: [{
+                                    text: 'ｏ JSON 指的是 JavaScript 对象表示法（JavaScript Object Notation）'
+                                },{text: 'ｏ JSON 是轻量级的文本数据交换格式'},{text: 'ｏ JSON 独立于语言：JSON 使用 Javascript语法来描述数据对象，但是 JSON 仍然独立于语言和平台。JSON 解析器和 JSON 库支持许多不同的编程语言。 目前非常多的动态（PHP，JSP，.NET）编程语言都支持JSON。'},{text: 'ｏ SON 具有自我描述性，更易理解'}]
+                            },{
+                                question: 'JSON - 转换为 JavaScript 对象',
+                                answers: [{
+                                    text: 'JSON 文本格式在语法上与创建 JavaScript 对象的代码相同。'
+                                },{text: '由于这种相似性，无需解析器，JavaScript 程序能够使用内建的 eval() 函数，用 JSON 数据来生成原生的 JavaScript 对象。'}]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'Vue',
+                        content: [{
+                            title: 'Vue',
+                            questionList: [{
+                                question: '1、active-class是哪个组件的属性？嵌套路由怎么定义？',
+                                answers: [{
+                                    text: 'vue-router模块的router-link组件'
+                                }]
+                            },{
+                                question: '2、怎么定义vue-router的动态路由？怎么获取传过来的动态参数？',
+                                answers: [{
+                                    text: '在router目录下的index.js文件中，对path属性加上/:id。  使用router对象的params.id'
+                                }]
+                            },{
+                                question: '3、vue-router有哪几种导航钩子？',
+                                answers: [{
+                                    text: '三种',childtext: [{text: '一种是全局导航钩子：router.beforeEach(to,from,next)，作用：跳转前进行判断拦截。'},{text: '第二种：组件内的钩子'},{text: '第三种：单独路由独享组件'}]
+                                }]
+                            },{
+                                question: '4、scss是什么？安装使用的步骤是？有哪几大特性？',
+                                answers: [{
+                                    text: '预处理css，把css当前函数编写，定义变量,嵌套。'
+                                },{text: '先装css-loader、node-loader、sass-loader等加载器模块，在webpack-base.config.js配置文件中加多一个拓展:extenstion，再加多一个模块：module里面test、loader'},{
+                                    text: 'vue.cli中的安装使用步骤',
+                                    childtext: [{text: '第一步：用npm 下三个loader（sass-loader、css-loader、node-sass）'},{text: '第二步：在build目录找到webpack.base.config.js，在那个extends属性中加一个拓展.scss'},{
+                                        text: '第三步：还是在同一个文件，配置一个module属性'
+                                    },{text: '第四步：然后在组件的style标签加上lang属性 ，例如：lang=”scss”'}]
+                                },{
+                                    text: '几大特性:',
+                                    childtext: [{text: '1、可以用变量，例如（$变量名称=值）'},{text: '2、可以用混合器，例如（）'},{text: '3、可以嵌套'}]
+                                }]
+                            },{
+                                question: '5、mint-ui是什么？怎么使用？说出至少三个组件使用方法？',
+                                answers: [{
+                                    text: '基于vue的前端组件库',childtext: [{text: 'npm安装，然后import样式和js，vue.use（mintUi）全局引入。在单个组件局部引入：import {Toast} from ‘mint-ui’。组件一：Toast(‘登录成功’)；组件二：mint-header；组件三：mint-swiper'}]
+                                }]
+                            },{
+                                question: '6、v-model是什么？怎么使用？ vue中标签怎么绑定事件？',
+                                answers: [{
+                                    text: '可以实现双向绑定，指令（v-class、v-for、v-if、v-show、v-on）。vue的model层的data属性。绑定事件：<input @click=doLog() />'
+                                }]
+                            },{
+                                question: '7、axios是什么？怎么使用？描述使用它实现登录功能的流程？',
+                                answers: [{
+                                    text: '请求后台资源的模块。npm install axios -S装好，然后发送的是跨域，需在配置文件中config/index.js进行设置。后台如果是Tp5则定义一个资源路由。js中使用import进来，然后.get或.post。返回在.then函数中如果成功，失败则是在.catch函数中'
+                                }]
+                            },{
+                                question: '8、axios+tp5进阶中，调用axios.post(‘api/user’)是进行的什么操作？axios.put(‘api/user/8′)呢？',
+                                answers: [{
+                                    text: '跨域，添加用户操作，更新操作。'
+                                }]
+                            },{
+                                question: '9、什么是RESTful API？怎么使用?',
+                                answers: [{
+                                    text: '是一个api的标准，无状态请求。请求的路由地址是固定的，如果是tp5则先路由配置中把资源路由配置好。标准有：.post .put .delete'
+                                }]
+                            },{
+                                question: '10、vuex是什么？怎么使用？哪种功能场景使用它？',
+                                answers: [{
+                                    text: 'vue框架中状态管理。在main.js引入store，注入。新建了一个目录store，….. export 。场景有：单页应用中，组件之间的状态。音乐播放、登录状态、加入购物车'
+                                }]
+                            },{
+                                question: '11、mvvm框架是什么？它和其它框架（jquery）的区别是什么？哪些场景适合？',
+                                answers: [{
+                                    text: '一个model+view+viewModel框架，数据模型model，viewModel连接两个区别：vue数据驱动，通过数据来显示视图层而不是节点操作。场景：数据操作比较多的场景，更加便捷'
+                                }]
+                            },{
+                                question: '12、自定义指令（v-check、v-focus）的方法有哪些？它有哪些钩子函数？还有哪些钩子函数参数？',
+                                answers: [{
+                                    text: '全局定义指令：在vue对象的directive方法里面有两个参数，一个是指令名称，另外一个是函数。组件内定义指令：directives 钩子函数：bind（绑定事件触发）、inserted(节点插入的时候触发)、update（组件内相关更新） 钩子函数参数：el、binding'
+                                }]
+                            },{
+                                question: '13、说出至少4种vue当中的指令和它的用法？',
+                                answers: [{text: 'v-if：判断是否隐藏；v-for：数据循环出来；v-bind:class：绑定一个属性；v-model：实现双向绑定'}]
+                            },{
+                                question: '14、vue-router是什么？它有哪些组件？',
+                                answers: [{text: 'vue用来写路由一个插件。router-link、router-view'}]
+                            },{
+                                question: '15、导航钩子有哪些？它们有哪些参数？',
+                                answers: [{text: '导航钩子有：a/全局钩子和组件内独享的钩子。b/beforeRouteEnter、afterEnter、beforeRouterUpdate、beforeRouteLeave 参数：有to（去的那个路由）、from（离开的路由）、next（一定要用这个函数才能去到下一个路由，如果不用就拦截）最常用就这几种'}]
+                            },{
+                                question: '16、Vue的双向数据绑定原理是什么？',
+                                answers: [{text: 'vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。具体步骤：',childtext: [{
+                                    text: '第一步：需要observe的数据对象进行递归遍历，包括子属性对象的属性，都加上 setter和getter 这样的话，给这个对象的某个值赋值，就会触发setter，那么就能监听到了数据变化'
+                                },{text: '第二步：compile解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图'},{text: '第三步：Watcher订阅者是Observer和Compile之间通信的桥梁，主要做的事情是:'},{text: '1、在自身实例化时往属性订阅器(dep)里面添加自己'},{text: '2、自身必须有一个update()方法'},{text: '3、待属性变动dep.notice()通知时，能调用自身的update()方法，并触发Compile中绑定的回调，则功成身退。'},{text: '第四步：MVVM作为数据绑定的入口，整合Observer、Compile和Watcher三者，通过Observer来监听自己的model数据变化，通过Compile来解析编译模板指令，最终利用Watcher搭起Observer和Compile之间的通信桥梁，达到数据变化 -> 视图更新；视图交互变化(input) -> 数据model变更的双向绑定效果。'}]}]
+                            },{
+                                question: '17、请详细说下你对vue生命周期的理解？',
+                                answers: [{text: '总共分为8个阶段创建前/后，载入前/后，更新前/后，销毁前/后。',childtext: [{text: '创建前/后： 在beforeCreated阶段，vue实例的挂载元素$el和数据对象data都为undefined，还未初始化。在created阶段，vue实例的数据对象data有了，$el还没有。'},{text: '载入前/后：在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.message成功渲染。'},{text: '更新前/后：当data变化时，会触发beforeUpdate和updated方法。'},{text: '销毁前/后：在执行destroy方法后，对data的改变不会再触发周期函数，说明此时vue实例已经解除了事件监听以及和dom的绑定，但是dom结构依然存在'}]}]
+                            },{
+                                question: '18、请说下封装 vue 组件的过程？',
+                                answers: [{text: '首先，组件可以提升整个项目的开发效率。能够把页面抽象成多个相对独立的模块，解决了我们传统项目开发：效率低、难维护、复用性等问题。然后，使用Vue.extend方法创建一个组件，然后使用Vue.component方法注册组件。子组件需要数据，可以在props中接受定义。而子组件修改好数据后，想把数据传递给父组件。可以采用emit方法。'}]
+                            },{
+                                question: '19、你是怎么认识vuex的？',
+                                answers: [{text: 'vuex可以理解为一种开发模式或框架。比如PHP有thinkphp，java有spring等。'},{text: '通过状态（数据源）集中管理驱动组件的变化（好比spring的IOC容器对bean进行集中管理）。'},{text: '应用级的状态集中放在store中； 改变状态的方式是提交mutations，这是个同步的事物； 异步逻辑应该封装在action中。'}]
+                            },{
+                                question: '20、vue-loader是什么？使用它的用途有哪些？',
+                                answers: [{text: '解析.vue文件的一个加载器，跟template/js/style转换成js模块。用途：js可以写es6、style样式可以scss或less、template可以加jade等'}]
+                            },{
+                                question: '21、请说出vue.cli项目中src目录每个文件夹和文件的用法？',
+                                answers: [{text: 'assets文件夹是放静态资源；components是放组件；router是定义路由相关的配置;view视图；app.vue是一个应用主组件；main.js是入口文件'}]
+                            },{
+                                question: '22、vue.cli中怎样使用自定义的组件？有遇到过哪些问题吗？',
+                                answers: [{text: '第一步：在components目录新建你的组件文件（smithButton.vue），script一定要export default {'},{text: '第二步：在需要用的页面（组件）中导入：import smithButton from ‘../components/smithButton.vue’'},{text: '第三步：注入到vue的子组件的components属性上面,components:{smithButton}'},{text: '第四步：在template视图view中使用，<smith-button>  </smith-button>'},{text: '问题有：smithButton命名，使用的时候则smith-button。'}]
+                            },{
+                                question: '23、聊聊你对Vue.js的template编译的理解？',
+                                answers: [{text: '简而言之，就是先转化成AST树，再得到的render函数返回VNode（Vue的虚拟DOM节点）',childtext: [{text: '详细步骤：'},{text: '首先，通过compile编译器把template编译成AST语法树（abstract syntax tree 即 源代码的抽象语法结构的树状表现形式），compile是createCompiler的返回值，createCompiler是用以创建编译器的。另外compile还负责合并option。然后，AST会经过generate（将AST语法树转化成render funtion字符串的过程）得到render函数，render的返回值是VNode，VNode是Vue的虚拟DOM节点，里面有（标签名、子节点、文本等等）'
+                                }]}]
+                            },{
+                                question: '24、vue的组件是怎么定义的？父组件怎么给子组件传值？',
+                                answers: [{text: '首先注册vue.components，第一个参数是组件名称，第二个参数是选项。直接绑定一个属性，然后在子组件props里面接收'}]
+                            },{
+                                question: '25、使用过element.ui吗？说下它其中两个组件的使用方法？',
+                                answers: [{text: '使用过用过一个布局的，它是由24份，它的写法是:span后面带的数字它占24份里面的宽度。:offset是它的间距，后面也是跟数字，也是从24份里面取的。'},{text: 'input按钮，标签是el-input，后面type跟上一个属性就是显示不同按钮的类型，有默认的default（默认的）、success（成功的）、warning（警告）、danger（危险）、info（）、primary（）'}]
+                            },{
+                                question: '26、说下你对mvvm的理解？双向绑定的理解?',
+                                answers: [{text: 'mvvm就是vm框架视图、m模型就是用来定义驱动的数据、v经过数据改变后的html、vm就是用来实现双向绑定'},{text: '双向绑定:一个变了另外一个跟着变了，例如：视图一个绑定了模型的节点有变化，模型对应的值会跟着变'}]
+                            },{
+                                question: '27、说出你所使用过的vue指令',
+                                answers: [{text: 'v-on（监听事件、@change、@click）、v-if（判断的）、v-show（显示/隐藏）、v-bind（绑定属性、:disabled、:src）'}]
+                            },{
+                                question: '28、你觉得怎样的自定义组件是完善的？至少说出4点',
+                                answers: [{text: '第一点、可以通用'},{text: '第二点、代码尽量简洁'},{text: '第三点、容易修改'},{text: '第四点、功能要多一点'}]
+                            },{
+                                question: '29.请说下具体使用vue的理解？',
+                                answers: [{text: '1、使用vue不必担心布局更改和类名重复导致的js重写，因为它是靠数据驱动双向绑定，底层是通过Object.defineProperty() 定义的数据 set、get 函数原理实现。'},{text: '2、组件化开发，让项目的可拓展性、移植性更好，代码重用性更高，就好像农民工建房子，拿起自己的工具包就可以开工。项目经理坐等收楼就好。'},{text: '3、单页应用的体验零距离接触安卓原生应用，局部组件更新界面，让用户体验更快速省时。'},{
+                                    text: '4、js的代码无形的规范，团队合作开发代码可阅读性更高。'
+                                }]
+                            },{
+                                question: '30.你觉得哪些项目适合vue框架？',
+                                answers: [{text: '1、数据信息量比较多的，反之类似企业网站就无需此框架了。'},{text: '2、手机web和app应用多端共用一套界面的项目，因为使用vue.cli+webpack后的前端目录，非常有利于项目的跨平台部署。'}]
+                            },{
+                                question: '31.怎么理解MVVM模式的这些框架？',
+                                answers: [{text: '1、M就是Model模型层，存的一个数据对象。'},{text:'2、V就是View视图层，所有的html节点在这一层。'},{text: '3、VM就是ViewModel，它通过data属性连接Model模型层，通过el属性连接View视图层。'}]
+                            },{
+                                question: '32.PC端项目你会在哪些场景使用Vue框架？',
+                                answers: [{text: '上万级数据需要瀑布流更新和搜索的时候，因为数据庞大的时候，用原生的dom操作js和html都会有列表的html布局，迭代很困难。再一个dom节点的大面积添加会影响性能。'},{text: '那么vue为什么解决这些问题呢？',childtext: [{text: '第一：只需用v-for在view层一个地方遍历数据即可，无需复制一段html代码在js和html两个地方。'},{text: '第二：vue通过Virtual Dom就是在js中模拟DOM对象树来优化DOM操作。'}]}]
+                            }]
+                        },{
+                            title: 'vuex',
+                            questionList: [{
+                                question: '1、vuex有哪几种属性？',
+                                answers: [{text: '有五种，分别是 State、 Getter、Mutation 、Action、 Module'}]
+                            },{
+                                question: '2、vuex的State特性是？',
+                                answers: [{text: '①Vuex就是一个仓库，仓库里面放了很多对象。其中state就是数据源存放地，对应于与一般Vue对象里面的data'},{text: '②state里面存放的数据是响应式的，Vue组件从store中读取数据，若是store中的数据发生改变，依赖这个数据的组件也会发生更新'},{text: '③它通过mapState把全局的 state 和 getters 映射到当前组件的 computed 计算属性中'}]
+                            },{
+                                question: '3、vuex的Getter特性是？',
+                                answers: [{text: '①getters 可以对State进行计算操作，它就是Store的计算属性'},{text: '② 虽然在组件内也可以做计算属性，但是getters 可以在多组件之间复用'},{text: '③ 如果一个状态只在一个组件内使用，是可以不用getters'}]
+                            },{
+                                question: '4、vuex的Mutation特性是？',
+                                answers: [{text: 'Action 类似于 mutation，不同在于：Action 提交的是 mutation，而不是直接变更状态。Action 可以包含任意异步操作'}]
+                            },{
+                                question: '5、Vue.js中ajax请求代码应该写在组件的methods中还是vuex的actions中？',
+                                answers: [{text: '①如果请求来的数据是不是要被其他组件公用，仅仅在请求的组件内使用，就不需要放入vuex 的state里。'},{text: '②如果被其他地方复用，这个很大几率上是需要的，如果需要，请将请求放入action里，方便复用，并包装成promise返回，在调用处用async await处理返回的数据。如果不要复用这个请求，那么直接写在vue文件里很方便。'}]
+                            },{
+                                question: '6、不用Vuex会带来什么问题？',
+                                answers: [{text: '一、可维护性会下降，你要想修改数据，你得维护三个地方'},{text: '二、可读性会下降，因为一个组件里的数据，你根本就看不出来是从哪来的'},{text: '三、增加耦合，大量的上传派发，会让耦合性大大的增加，本来Vue用Component就是为了减少耦合，现在这么用，和组件化的初衷相背。'}]
+                            }]
+                        },{
+                            title: '生命周期',
+                            questionList: [{
+                                question: '1、什么是vue生命周期？',
+                                answers: [{text: 'Vue 实例从创建到销毁的过程，就是生命周期。也就是从开始创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程，我们称这是 Vue 的生命周期。'}]
+                            },{
+                                question: '2、vue生命周期的作用是什么？',
+                                answers: [{text: '它的生命周期中有多个事件钩子，让我们在控制整个Vue实例的过程时更容易形成好的逻辑。'}]
+                            },{
+                                question: '3、vue生命周期总共有几个阶段？',
+                                answers: [{text: '它可以总共分为8个阶段：创建前/后, 载入前/后,更新前/后,销毁前/销毁后'}]
+                            },{
+                                question: '4、第一次页面加载会触发哪几个钩子？',
+                                answers: [{text: '第一次页面加载时会触发 beforeCreate, created, beforeMount, mounted 这几个钩子'}]
+                            },{
+                                question: '5、DOM 渲染在 哪个周期中就已经完成？',
+                                answers: [{text: 'DOM 渲染在 mounted 中就已经完成了。'}]
+                            },{
+                                question: '6、简单描述每个周期具体适合哪些场景？',
+                                answers: [{text: '生命周期钩子的一些使用方法： beforecreate : 可以在这加个loading事件，在加载实例时触发 created : 初始化完成时的事件写在这里，如在这结束loading事件，异步请求也适宜在这里调用 mounted : 挂载元素，获取到DOM节点 updated : 如果对数据统一处理，在这里写上相应函数 beforeDestroy : 可以做一个确认停止事件的确认框 nextTick : 更新数据后立即操作dom '}]
+                            }]
+                        },{
+                            title: 'axios',
+                            questionList: [{
+                                question: '1、axios的特点有哪些？',
+                                answers: [{text: '① Axios 是一个基于 promise 的 HTTP 库，支持promise所有的API'},{text: '② 它可以拦截请求和响应'},{
+                                    text: '③ 它可以转换请求数据和响应数据，并对响应回来的内容自动转换成 JSON类型的数据'
+                                },{text: '④ 安全性更高，客户端支持防御 XSRF'}]
+                            },{
+                                question: '2、axios有哪些常用方法？',
+                                answers: [{text: '① axios.get(url[, config])   //get请求用于列表和信息查询'},{text: '② axios.delete(url[, config])  //删除'},{text: '③ axios.post(url[, data[, config]])  //post请求用于信息的添加'},{text: '④ axios.put(url[, data[, config]])  //更新操作'}]
+                            },{
+                                question: '3、说下你了解的axios相关配置属性？',
+                                answers: [{childtext: [{text: '`url`是用于请求的服务器URL'},{text: '`method`是创建请求时使用的方法,默认是get'},{text: '`baseURL`将自动加在`url`前面，除非`url`是一个绝对URL。它可以通过设置一个`baseURL`便于为axios实例的方法传递相对URL'},{text: '`transformRequest`允许在向服务器发送前，修改请求数据，只能用在\'PUT\',\'POST\'和\'PATCH\'这几个请求方法'},{text: '`headers`是即将被发送的自定义请求头',jscode: 'headers:{\'X-Requested-With\':\'XMLHttpRequest\'}'},{text: '`params`是即将与请求一起发送的URL参数，必须是一个无格式对象(plainobject)或URLSearchParams对象params: {ID:12345},'},{text: '`auth`表示应该使用HTTP基础验证，并提供凭据，这将设置一个`Authorization`头，覆写掉现有的任意使用`headers`设置的自定义`Authorization`头 ',jscode: 'auth:{\n  username:\'janedoe\',\n  password:\'s00pers3cret\'\n},'},{text: '\'proxy\'定义代理服务器的主机名称和端口',jscode: 'proxy:{\n  host:\'127.0.0.1\',\n  port:9000,\n  auth:{\n    username:\'mikeymike\',\n    password:\'rapunz3l\'\n  }\n}'}]}]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'React',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'AngularJs',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'Node.js',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'webpack',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'Ext.js',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'Github',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+                    {
+                        title: 'Java',
+                        content: [{
+                            title: '',
+                            questionList: [{
+                                question: '',
+                                answers: [{
+                                    text: ''
+                                }]
+                            }]
+                        }]
+                    },
+
+                ]
+            },
+            methods: {
+                changeTitle(e) {
+                    if(location.hash.indexOf("#" + e) == -1){
+                        location.href = "#" + e
+                    } else {
+                        location.hash = ""
+                    }
+                },
+                onscroll() {
+                    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementsByClassName('back-top')[0].style.opacity = 1
+                    } else {
+                        document.getElementsByClassName('back-top')[0].style.opacity = 0
+                    }
+                    //主要用于判断当 点击回到顶部按钮后 滚动条在回滚过程中，若手动滚动滚动条，则清除定时器
+                    if (!this.isTop) {
+                        clearInterval(this.timer)
+                    }
+                    this.isTop = false
+                },
+                toTop() {
+                    let self = this
+                    this.timer = setInterval(() => {
+                        //获取滚动条的滚动高度
+                        let osTop = document.documentElement.scrollTop || document.body.scrollTop;
+                        //用于设置速度差，产生缓动的效果
+                        let speed = Math.floor(-osTop / 6);
+                        document.documentElement.scrollTop = document.body.scrollTop = osTop + speed
+                        self.isTop = true  //用于阻止滚动事件清除定时器
+                        if (osTop == 0) {
+                            clearInterval(self.timer)
+                        }
+                    }, 30)
+                },
+                showNav() {
+                    this.webnav = true
+                }
+            },
+            watch: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
